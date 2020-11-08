@@ -1,8 +1,26 @@
 %{
 /* Declaracoes C diversas */
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 int count = 0;
+
+typedef struct Comentario {
+	const char* id;
+	const char* user;
+	const char* date;
+	const char* conteudo;
+	const int likes;
+	const int hasReplies;
+	const int numOfReplies;
+	struct Comentario* coms[50];
+} *comPTR, com;
+
+comPTR comentario;
+
+void criaComentario() {
+	comentario = malloc(sizeof(com));
+}
 
 %}
 
@@ -21,11 +39,12 @@ END_USERNAME_TAG			\"[' ']href
 %%
 
 {START_LI_POST_TAG} {
-	
+	criaComentario();
 	yy_push_state(COMMENT);
 }
 
 <COMMENT>[0-9]{10}/(\"\>\<div[' ']role=\"alert\"\>\<\/div\>) {
+	comentario->id = strdup(yytext);
 	printf("\"id\": \"%s\"\n", yytext);
 }
 
@@ -44,7 +63,7 @@ END_USERNAME_TAG			\"[' ']href
 }
 
 <CONTENT>(.)+(\n)?/{END_POST_MESSAGE_TAG} {
-	
+	comentario->conteudo = strdup(yytext);
 	printf("\"%s\"\n", yytext);
 	yy_pop_state();
 }
@@ -55,7 +74,8 @@ END_USERNAME_TAG			\"[' ']href
 %%
 
 int yywrap() {
-	printf("Count: %i\n", count);
+	printf("Count: %s\n", comentario->id);
+	printf("Text: %s\n", comentario->conteudo);
 	return(1);
 }
 
