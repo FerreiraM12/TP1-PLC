@@ -29,12 +29,17 @@ void criaComentario() {
 START_LI_POST_TAG			\<li[' ']class=\"post\"[' ']id=\"post-
 
 START_POST_MESSAGE_TAG		\<div[' ']class=\"post-message\"[' ']data-role=\"message\"[' ']dir=\"auto\"\>\<div\>
-END_POST_MESSAGE_TAG		\<\/div\>\n<\/div\>
+END_POST_MESSAGE_TAG		\n\<\/div\>\n<\/div\>
 
 START_USERNAME_TAG			\<a[' ']data-action=\"profile\"[' ']data-username=\"
 END_USERNAME_TAG			\"[' ']href
 
-%x COMMENT CONTENT USERNAME
+START_DATE_TAG				\<a[' ']class=\"time-ago.+\"\>
+END_DATE_TAG				ago\<\/a\>
+
+
+
+%x COMMENT CONTENT USERNAME DATE
 
 %%
 
@@ -49,12 +54,21 @@ END_USERNAME_TAG			\"[' ']href
 }
 
 <COMMENT>{START_POST_MESSAGE_TAG} {
-	printf("\"commentText\":");
+	printf("\"commentText\": \"");
 	yy_push_state(CONTENT);
 }
-
+ 
 <COMMENT>{START_USERNAME_TAG} {
 	yy_push_state(USERNAME);
+}
+
+<COMMENT>{START_DATE_TAG} {
+	yy_push_state(DATE);
+}
+
+<DATE>.+ago/\<\/a\> {
+	printf("\"date\": \"%s\"\n\"timestamp\": \"NA\"\n", yytext);
+	yy_pop_state();
 }
 
 <USERNAME>.+/{END_USERNAME_TAG} {
@@ -62,14 +76,13 @@ END_USERNAME_TAG			\"[' ']href
 	yy_pop_state();
 }
 
-<CONTENT>(.)+(\n)?/{END_POST_MESSAGE_TAG} {
+<CONTENT>.+/{END_POST_MESSAGE_TAG} {
 	comentario->conteudo = strdup(yytext);
-	printf("\"%s\"\n", yytext);
+	printf("%s\"\n\n", yytext);
 	yy_pop_state();
 }
 
-
-<INITIAL,COMMENT>.|\n { ; }
+<INITIAL,COMMENT,DATE>.|\n { ; }
 
 %%
 
