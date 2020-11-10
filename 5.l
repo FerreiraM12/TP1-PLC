@@ -50,11 +50,11 @@ END_DATE_TAG				ago\<\/a\>
 
 <COMMENT>[0-9]{10}/(\"\>\<div[' ']role=\"alert\"\>\<\/div\>) {
 	comentario->id = strdup(yytext);
-	printf("\"id\": \"%s\"\n", yytext);
+	printf("\{\n\t\"id\": \"%s\"\n", yytext);
 }
 
 <COMMENT>{START_POST_MESSAGE_TAG} {
-	printf("\"commentText\": \"");
+	//printf("\t\"commentText\": \"");
 	yy_push_state(CONTENT);
 }
  
@@ -67,17 +67,18 @@ END_DATE_TAG				ago\<\/a\>
 }
 
 <DATE>.+ago/\<\/a\> {
-	printf("\"date\": \"%s\"\n\"timestamp\": \"NA\"\n", yytext);
+	printf("\t\"date\": \"%s\"\n\t\"timestamp\": \"NA\"\n", yytext);
 	yy_pop_state();
 }
 
 <USERNAME>.+/{END_USERNAME_TAG} {
-	printf("\"user\": \"%s\"\n", yytext);
+	printf("\t\"user\": \"%s\"\n", yytext);
 	yy_pop_state();
 }
 
-<CONTENT>.+/{END_POST_MESSAGE_TAG} {
+<CONTENT>(\<\/[^d]|\<[^\/]|[^\<])*/{END_POST_MESSAGE_TAG} {
 	comentario->conteudo = strdup(yytext);
+	printf("\t\"commentText\": \"");
 	printf("%s\"\n\n", yytext);
 	yy_pop_state();
 }
