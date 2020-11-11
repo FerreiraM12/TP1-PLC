@@ -58,6 +58,12 @@ END_DATE_TAG				ago\<\/a\>
 	//printf("Count: %i\n", count);
 	//printf("PUSH COMMENT\n\n");
 
+	if (count == 1 && comCount == 1) {
+		printf("[\n");
+		indentation(0);
+		printf("{\n");
+	}
+
 	if (count == 1 && comCount > 1) {
 		printf(",\n");
 		indentation(0);

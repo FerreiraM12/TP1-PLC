@@ -998,6 +998,12 @@ YY_RULE_SETUP
 	//printf("Count: %i\n", count);
 	//printf("PUSH COMMENT\n\n");
 
+	if (count == 1 && comCount == 1) {
+		printf("[\n");
+		indentation(0);
+		printf("{\n");
+	}
+
 	if (count == 1 && comCount > 1) {
 		printf(",\n");
 		indentation(0);
@@ -1017,7 +1023,7 @@ case 2:
 (yy_c_buf_p) = yy_cp -= 26;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 75 "5.l"
+#line 81 "5.l"
 {
 	comentario->id = strdup(yytext);
 	indentation(count);
@@ -1026,7 +1032,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 81 "5.l"
+#line 87 "5.l"
 {
 	//printf("PUSH CONTENT\n\n");
 	yy_push_state(CONTENT);
@@ -1034,7 +1040,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 86 "5.l"
+#line 92 "5.l"
 {
 	//printf("PUSH USERNAME\n\n");
 	yy_push_state(USERNAME);
@@ -1042,7 +1048,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 91 "5.l"
+#line 97 "5.l"
 {
 	//printf("PUSH DATE\n\n");
 	yy_push_state(DATE);
@@ -1051,7 +1057,7 @@ YY_RULE_SETUP
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
-#line 96 "5.l"
+#line 102 "5.l"
 {
 	indentation(count-1);
 	printf("}\n");
@@ -1070,7 +1076,7 @@ case 7:
 (yy_c_buf_p) = yy_cp -= 4;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 109 "5.l"
+#line 115 "5.l"
 {
 	indentation(count);
 	printf("\"date\": \"%s\"\n", yytext);
@@ -1085,7 +1091,7 @@ case 8:
 (yy_c_buf_p) = yy_cp -= 6;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 118 "5.l"
+#line 124 "5.l"
 {
 	indentation(count);
 	printf("\"user\": \"%s\"\n", yytext);
@@ -1100,7 +1106,7 @@ YY_LINENO_REWIND_TO(yy_cp - 14);
 (yy_c_buf_p) = yy_cp -= 14;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 125 "5.l"
+#line 131 "5.l"
 {
 	comentario->conteudo = strdup(yytext);
 	indentation(count);
@@ -1114,15 +1120,15 @@ YY_RULE_SETUP
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 135 "5.l"
+#line 141 "5.l"
 { ; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 137 "5.l"
+#line 143 "5.l"
 ECHO;
 	YY_BREAK
-#line 1126 "lex.yy.c"
+#line 1132 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(COMMENT):
 case YY_STATE_EOF(CONTENT):
@@ -2177,7 +2183,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 137 "5.l"
+#line 143 "5.l"
 
 
 int yywrap() {

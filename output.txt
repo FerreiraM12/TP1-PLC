@@ -1,4 +1,6 @@
-"commentThread":         "id": "4867442284"
+"commentThread": [
+    {
+        "id": "4867442284"
         "user": "ruymagalhes"
         "date": "2 months ago"
         "timestamp": "NA"
