@@ -10,7 +10,7 @@ typedef struct Comentario {
 	const char* commentText;
 	const char* likes;
 	//const int hasReplies;
-	//const int numOfReplies;
+	int numberOfReplies;
     struct Comentario* comPTRArr[25];
 } *ComPTR, Com;
 
@@ -30,6 +30,7 @@ void setUser();
 void setDate();
 void setCommentText();
 void setLikes();
+int setNumberOfReplies();
 void printComs();
 void fillmTreeLoc();
 void printmtreeloc();
@@ -55,6 +56,7 @@ ComPTR cloneComment(ComPTR comPTR2) {
     comPTR1->date = strdup(comPTR2->date);
     comPTR1->commentText = strdup(comPTR2->commentText);
 	comPTR1->likes = strdup(comPTR2->likes);
+	comPTR1->numberOfReplies = comPTR2->numberOfReplies;
     for(int i=0;i<25;i++) comPTR2->comPTRArr[i] = NULL;
     return comPTR1;
 }
@@ -65,14 +67,20 @@ ComPTR createComment() {
 }
 
 void setID(ComPTR comPTR2, char* id) {comPTR2->id = strdup(id);}
-
 void setUser(ComPTR comPTR2, char* user) {comPTR2->user = strdup(user);}
-
 void setDate(ComPTR comPTR2, char* date) {comPTR2->date = strdup(date);}
-
 void setCommentText(ComPTR comPTR2, char* commentText) {comPTR2->commentText = strdup(commentText);}
-
 void setLikes(ComPTR comPTR2, char* likes) {comPTR2->likes = strdup(likes);}
+
+int setNumberOfReplies(ComPTR comPTR) {
+	int numberOfReplies = 0;
+	for (int i = 0; i < 25; i++) {
+		if (comPTR->comPTRArr[i] != NULL) numberOfReplies += setNumberOfReplies(comPTR->comPTRArr[i]);
+		else break;
+	}
+	comPTR->numberOfReplies = numberOfReplies;
+	return numberOfReplies+1;
+}
 
 void printComs(ComPTR comPTR1, int depth) {
     int hasReplies = 0;
@@ -82,6 +90,9 @@ void printComs(ComPTR comPTR1, int depth) {
     indentation(depth+1); printf("\"timestamp\": \"%s\"\n", "NA");
     indentation(depth+1); printf("\"commentText\": \"%s\"\n", comPTR1->commentText);
 	indentation(depth+1); printf("\"likes\": %s\n", comPTR1->likes);
+	indentation(depth+1); printf("\"hasReplies\": ");
+	if (comPTR1->numberOfReplies == 0) printf("False\n"); else printf("True\n");
+	indentation(depth+1); printf("\"numberOfReplies\": %i\n", comPTR1->numberOfReplies);
     for (int i = 0; i < 25; i++) {
         if (comPTR1->comPTRArr[i] != NULL) hasReplies = 1; break;
     }
@@ -126,7 +137,7 @@ LIKES                       data-role=\"likes\"\>
 END_LIKES                   \<\/span\>
 
 %option stack
-%s COMMENT CONTENT USERNAME DATE LIKE
+%s COMMENT USERNAME DATE CONTENT LIKE
 
 %%
 
@@ -186,6 +197,7 @@ END_LIKES                   \<\/span\>
         if (count2 != 0) printf(",\n");
         count2 = 1;
         indentation(1); printf("{\n");
+		setNumberOfReplies(comPTR1);
         printComs(comPTR1, 1);
         comPTR1 = NULL;
         indentation(1); printf("}");
