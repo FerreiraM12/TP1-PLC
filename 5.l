@@ -8,7 +8,7 @@ typedef struct Comentario {
 	const char* user;
 	const char* date;
 	const char* commentText;
-	//const int likes;
+	const char* likes;
 	//const int hasReplies;
 	//const int numOfReplies;
     struct Comentario* comPTRArr[25];
@@ -29,6 +29,7 @@ void setID();
 void setUser();
 void setDate();
 void setCommentText();
+void setLikes();
 void printComs();
 void fillmTreeLoc();
 void printmtreeloc();
@@ -53,6 +54,7 @@ ComPTR cloneComment(ComPTR comPTR2) {
     comPTR1->user = strdup(comPTR2->user);
     comPTR1->date = strdup(comPTR2->date);
     comPTR1->commentText = strdup(comPTR2->commentText);
+	comPTR1->likes = strdup(comPTR2->likes);
     for(int i=0;i<25;i++) comPTR2->comPTRArr[i] = NULL;
     return comPTR1;
 }
@@ -70,6 +72,8 @@ void setDate(ComPTR comPTR2, char* date) {comPTR2->date = strdup(date);}
 
 void setCommentText(ComPTR comPTR2, char* commentText) {comPTR2->commentText = strdup(commentText);}
 
+void setLikes(ComPTR comPTR2, char* likes) {comPTR2->likes = strdup(likes);}
+
 void printComs(ComPTR comPTR1, int depth) {
     int hasReplies = 0;
     indentation(depth+1); printf("\"id\": \"%s\"\n", comPTR1->id);
@@ -77,6 +81,7 @@ void printComs(ComPTR comPTR1, int depth) {
     indentation(depth+1); printf("\"date\": \"%s\"\n", comPTR1->date);
     indentation(depth+1); printf("\"timestamp\": \"%s\"\n", "NA");
     indentation(depth+1); printf("\"commentText\": \"%s\"\n", comPTR1->commentText);
+	indentation(depth+1); printf("\"likes\": %s\n", comPTR1->likes);
     for (int i = 0; i < 25; i++) {
         if (comPTR1->comPTRArr[i] != NULL) hasReplies = 1; break;
     }
@@ -117,8 +122,11 @@ END_USERNAME_TAG			\"[' ']href
 START_DATE_TAG				\<a[' ']class=\"time-ago.+\"\>
 END_DATE_TAG				ago\<\/a\>
 
+LIKES                       data-role=\"likes\"\> 
+END_LIKES                   \<\/span\>
+
 %option stack
-%s COMMENT CONTENT USERNAME DATE
+%s COMMENT CONTENT USERNAME DATE LIKE
 
 %%
 
@@ -148,7 +156,6 @@ END_DATE_TAG				ago\<\/a\>
 
 <DATE>.+ago/\<\/a\> {
     setDate(comPTR2, yytext);
-    
 	yy_pop_state();
 }
 
@@ -158,9 +165,18 @@ END_DATE_TAG				ago\<\/a\>
 
 <CONTENT>(\<\/[^d]|\<[^\/]|[^\<])*/{END_POST_MESSAGE_TAG} {
     setCommentText(comPTR2, yytext);
+	yy_pop_state();
+}
+
+<COMMENT>{LIKES} {
+    yy_push_state(LIKE);
+}
+
+<LIKE>[0-9]+ {
+	setLikes(comPTR2, yytext);
     mTreeInserter(&comPTR1, mTreeLoc, comPTR2);
     comPTR2 = NULL;
-	yy_pop_state();
+    yy_pop_state();
 }
 
 <COMMENT>{END_LI_POST_TAG} {
