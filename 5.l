@@ -20,29 +20,28 @@ int depth = 0;
 int count = 0;
 int cTreePos[25];
 
-void mTreeInserter();
-void mTreeInserterAUX();
-CTree cloneComment();
+void mTreeInserter(CTree*, int*, CTree);
+void mTreeInserterAUX(CTree*, int*, int, CTree);
+CTree cloneComment(CTree);
 CTree createComment();
-void setID();
-void setUser();
-void setDate();
-void setCommentText();
-void setLikes();
-int setNumberOfReplies();
-void printComs();
-void fillcTreePos();
-void printmtreeloc();
-void indentation();
+void setID(CTree, char*);
+void setUser(CTree, char*);
+void setDate(CTree, char*);
+void setCommentText(CTree, char*);
+void setLikes(CTree, char*);
+int setNumberOfReplies(CTree);
+void printComs(CTree, int);
+void fillcTreePos(int*);
+void indentation(int);
 
 void mTreeInserter(CTree* cTreeLoc, int pos[], CTree cTreeTMP) {
-    if(*cTreeLoc == NULL) *cTreeLoc = cloneComment(cTreeTMP);
+    if(!*cTreeLoc) *cTreeLoc = cloneComment(cTreeTMP); // !*cTreeLoc é o mesmo que *cTreeLoc == NULL
     else mTreeInserterAUX(cTreeLoc, pos, 1, cTreeTMP);
 }
 
 void mTreeInserterAUX(CTree* cTreeLoc, int pos[], int i, CTree cTreeTMP) {
     if (pos[i] == -1) return;
-    if ((*cTreeLoc)->cTreeArr[pos[i]] == NULL) {
+    if (!(*cTreeLoc)->cTreeArr[pos[i]]) { // !(*cTreeLoc)->cTreeArr[pos[i]] é o mesmo que (*cTreeLoc)->cTreeArr[pos[i]] == NULL
         (*cTreeLoc)->cTreeArr[pos[i]] = cloneComment(cTreeTMP);
     } else mTreeInserterAUX(&(*cTreeLoc)->cTreeArr[pos[i]], pos, i+1, cTreeTMP);
 }
@@ -73,7 +72,7 @@ void setLikes(CTree cTree, char* likes) {cTree->likes = strdup(likes);}
 int setNumberOfReplies(CTree cTree) {
 	int numberOfReplies = 0;
 	for (int i=0;i<25;i++) {
-		if (cTree->cTreeArr[i] != NULL) numberOfReplies += setNumberOfReplies(cTree->cTreeArr[i]);
+		if (cTree->cTreeArr[i]) numberOfReplies += setNumberOfReplies(cTree->cTreeArr[i]);
 		else break;
 	}
 	cTree->numberOfReplies = numberOfReplies;
@@ -88,92 +87,84 @@ void printComs(CTree cTree, int depth) {
     indentation(depth+1); printf("\"commentText\": \"%s\"\n", cTree->commentText);
 	indentation(depth+1); printf("\"likes\": %s\n", cTree->likes);
 	indentation(depth+1); printf("\"hasReplies\": ");
-	if (cTree->numberOfReplies == 0) printf("False\n"); else printf("True\n");
+	if (!cTree->numberOfReplies) printf("False\n"); else printf("True\n");
 	indentation(depth+1); printf("\"numberOfReplies\": %i\n", cTree->numberOfReplies);
-    if (cTree->numberOfReplies == 0) {
+    if (!cTree->numberOfReplies) { // !cTree->numberOfReplies é o mesmo que cTree->numberOfReplies == 0
         indentation(depth+1); printf("\"replies\": []\n");
-    }
-    else {
+    } else {
         indentation(depth+1); printf("\"replies\": [\n");
         for (int i=0;i<25;i++) {
-            if (cTree->cTreeArr[i] != NULL) {
+            if (cTree->cTreeArr[i]) { // cTree->cTreeArr[i] é o mesmo que cTree->cTreeArr[i] != NULL
                 printComs(cTree->cTreeArr[i], depth+2);
-            }
-            else break;
+            } else break;
         }
     }
 }
 
 void fillcTreePos(int cTreePos[]) {for (int i=0;i<25;i++) cTreePos[i] = -1;}
 
-void printmtreeloc(int cTreePos[]) {
-	for (int i=0;i<25;i++) printf("%i", cTreePos[i]);
-    printf("\n");
-}
-
 void indentation(int n) {for (int i=0;i<n;i++) printf("    ");}
 
 %}
 
-START_LI_POST_TAG			\<li[' ']class=\"post\"[' ']id=\"post-
-END_LI_POST_TAG				Show[' ']more[' ']replies\<\/a\>\n\<\/div\>\n\<\/div\>\n\<\/li\>
+START_COMMENT     			\<li[' ']class=\"post\"[' ']id=\"post-
+ID_RE                       \"\>\<div[' ']role=\"alert\"\>\<\/div\>
+END_COMMENT    				Show[' ']more[' ']replies\<\/a\>\n\<\/div\>\n\<\/div\>\n\<\/li\>
 
-START_POST_MESSAGE_TAG		\<div[' ']class=\"post-message\"[' ']data-role=\"message\"[' ']dir=\"auto\"\>\<div\>
-END_POST_MESSAGE_TAG		\n\<\/div\>\n<\/div\>
+START_USERNAME	    		\<a[' ']data-action=\"profile\"[' ']data-username=\"
+END_USERNAME    			\"[' ']href
 
-START_USERNAME_TAG			\<a[' ']data-action=\"profile\"[' ']data-username=\"
-END_USERNAME_TAG			\"[' ']href
+START_DATE  				\<a[' ']class=\"time-ago.+\"\>
 
-START_DATE_TAG				\<a[' ']class=\"time-ago.+\"\>
-END_DATE_TAG				ago\<\/a\>
+START_COMMENT_TEXT  		\<div[' ']class=\"post-message\"[' ']data-role=\"message\"[' ']dir=\"auto\"\>\<div\>
+END_COMMENT_TEXT    		\n\<\/div\>\n<\/div\>
 
-LIKES                       data-role=\"likes\"\> 
-END_LIKES                   \<\/span\>
+START_LIKES                 data-role=\"likes\"\>
 
 %option stack
 %s COMMENT USERNAME DATE CONTENT LIKE
 
 %%
 
-{START_LI_POST_TAG} {
+{START_COMMENT} {
 	cTreePos[depth]++;
     cTreeTMP = createComment();
 	depth++;
 	yy_push_state(COMMENT);
 }
 
-<COMMENT>[0-9]{10}/(\"\>\<div[' ']role=\"alert\"\>\<\/div\>) {
+<COMMENT>[0-9]{10}/{ID_RE} {
 	setID(cTreeTMP, yytext);
 }
 
-<COMMENT>{START_USERNAME_TAG} {
+<COMMENT>{START_USERNAME} {
 	yy_push_state(USERNAME);
 }
 
-<USERNAME>.+/{END_USERNAME_TAG} {
+<USERNAME>.+/{END_USERNAME} {
     setUser(cTreeTMP, yytext);
 	yy_pop_state();
 }
 
-<COMMENT>{START_DATE_TAG} {
+<COMMENT>{START_DATE} {
 	yy_push_state(DATE);
 }
 
-<DATE>.+ago/\<\/a\> {
+<DATE>.+ago {
     setDate(cTreeTMP, yytext);
 	yy_pop_state();
 }
 
-<COMMENT>{START_POST_MESSAGE_TAG} {
+<COMMENT>{START_COMMENT_TEXT} {
 	yy_push_state(CONTENT);
 }
 
-<CONTENT>(\<\/[^d]|\<[^\/]|[^\<])*/{END_POST_MESSAGE_TAG} {
+<CONTENT>(\<\/[^d]|\<[^\/]|[^\<])*/{END_COMMENT_TEXT} {
     setCommentText(cTreeTMP, yytext);
 	yy_pop_state();
 }
 
-<COMMENT>{LIKES} {
+<COMMENT>{START_LIKES} {
     yy_push_state(LIKE);
 }
 
@@ -184,11 +175,11 @@ END_LIKES                   \<\/span\>
     yy_pop_state();
 }
 
-<COMMENT>{END_LI_POST_TAG} {
+<COMMENT>{END_COMMENT} {
 	cTreePos[depth] = -1;
 	depth--;
-    if (depth == 0) {
-        if (count != 0) printf(",\n");
+    if (!depth) { //!depth é o mesmo que depth == 0
+        if (count) printf(",\n"); //count != 0 é o mesmo que !count
         count = 1;
         indentation(1); printf("{\n");
 		setNumberOfReplies(cTree);
