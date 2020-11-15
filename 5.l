@@ -3,28 +3,27 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct Comentario {
+typedef struct Comment {
     const char* id;
 	const char* user;
 	const char* date;
 	const char* commentText;
 	const char* likes;
-	//const int hasReplies;
 	int numberOfReplies;
-    struct Comentario* comPTRArr[25];
-} *ComPTR, Com;
+    struct Comment* cTreeArr[25];
+} *CTree, Comment;
 
-ComPTR comPTR1; // Comentario principal
-ComPTR comPTR2; // Comentario temporário
+CTree cTree;
+CTree cTreeTMP;
 
-int i,count = 0;
-int count2 = 0;
-int mTreeLoc[25];
+int depth = 0;
+int count = 0;
+int cTreePos[25];
 
 void mTreeInserter();
 void mTreeInserterAUX();
-ComPTR cloneComment();
-ComPTR createComment();
+CTree cloneComment();
+CTree createComment();
 void setID();
 void setUser();
 void setDate();
@@ -32,92 +31,87 @@ void setCommentText();
 void setLikes();
 int setNumberOfReplies();
 void printComs();
-void fillmTreeLoc();
+void fillcTreePos();
 void printmtreeloc();
 void indentation();
 
-void mTreeInserter(ComPTR* comPTRloc, int locs[], ComPTR comPTR2) {
-    if(*comPTRloc == NULL) *comPTRloc = cloneComment(comPTR2);
-    else mTreeInserterAUX(comPTRloc, locs, 1, comPTR2);
+void mTreeInserter(CTree* cTreeLoc, int pos[], CTree cTreeTMP) {
+    if(*cTreeLoc == NULL) *cTreeLoc = cloneComment(cTreeTMP);
+    else mTreeInserterAUX(cTreeLoc, pos, 1, cTreeTMP);
 }
 
-void mTreeInserterAUX(ComPTR* comPTRloc, int locs[], int ind, ComPTR comPTR2) {
-    ComPTR comPTR1;
-    if (locs[ind] == -1) return;
-    if ((*comPTRloc)->comPTRArr[locs[ind]] == NULL) {
-        (*comPTRloc)->comPTRArr[locs[ind]] = cloneComment(comPTR2);
-    } else mTreeInserterAUX(&(*comPTRloc)->comPTRArr[locs[ind]], locs, ind+1, comPTR2);
+void mTreeInserterAUX(CTree* cTreeLoc, int pos[], int i, CTree cTreeTMP) {
+    if (pos[i] == -1) return;
+    if ((*cTreeLoc)->cTreeArr[pos[i]] == NULL) {
+        (*cTreeLoc)->cTreeArr[pos[i]] = cloneComment(cTreeTMP);
+    } else mTreeInserterAUX(&(*cTreeLoc)->cTreeArr[pos[i]], pos, i+1, cTreeTMP);
 }
 
-ComPTR cloneComment(ComPTR comPTR2) {
-    ComPTR comPTR1 = malloc(sizeof(Com));
-    comPTR1->id = strdup(comPTR2->id);
-    comPTR1->user = strdup(comPTR2->user);
-    comPTR1->date = strdup(comPTR2->date);
-    comPTR1->commentText = strdup(comPTR2->commentText);
-	comPTR1->likes = strdup(comPTR2->likes);
-	comPTR1->numberOfReplies = comPTR2->numberOfReplies;
-    for(int i=0;i<25;i++) comPTR2->comPTRArr[i] = NULL;
-    return comPTR1;
+CTree cloneComment(CTree cTreeTMP) {
+    CTree cTree = malloc(sizeof(Comment));
+    cTree->id = strdup(cTreeTMP->id);
+    cTree->user = strdup(cTreeTMP->user);
+    cTree->date = strdup(cTreeTMP->date);
+    cTree->commentText = strdup(cTreeTMP->commentText);
+	cTree->likes = strdup(cTreeTMP->likes);
+	cTree->numberOfReplies = cTreeTMP->numberOfReplies;
+    for(int i=0;i<25;i++) cTreeTMP->cTreeArr[i] = NULL;
+    return cTree;
 }
 
-ComPTR createComment() {
-    ComPTR comPTR2 = malloc(sizeof(Com));
-    return comPTR2;
+CTree createComment() {
+    CTree cTree = malloc(sizeof(Comment));
+    return cTree;
 }
 
-void setID(ComPTR comPTR2, char* id) {comPTR2->id = strdup(id);}
-void setUser(ComPTR comPTR2, char* user) {comPTR2->user = strdup(user);}
-void setDate(ComPTR comPTR2, char* date) {comPTR2->date = strdup(date);}
-void setCommentText(ComPTR comPTR2, char* commentText) {comPTR2->commentText = strdup(commentText);}
-void setLikes(ComPTR comPTR2, char* likes) {comPTR2->likes = strdup(likes);}
+void setID(CTree cTree, char* id) {cTree->id = strdup(id);}
+void setUser(CTree cTree, char* user) {cTree->user = strdup(user);}
+void setDate(CTree cTree, char* date) {cTree->date = strdup(date);}
+void setCommentText(CTree cTree, char* commentText) {cTree->commentText = strdup(commentText);}
+void setLikes(CTree cTree, char* likes) {cTree->likes = strdup(likes);}
 
-int setNumberOfReplies(ComPTR comPTR) {
+int setNumberOfReplies(CTree cTree) {
 	int numberOfReplies = 0;
-	for (int i = 0; i < 25; i++) {
-		if (comPTR->comPTRArr[i] != NULL) numberOfReplies += setNumberOfReplies(comPTR->comPTRArr[i]);
+	for (int i=0;i<25;i++) {
+		if (cTree->cTreeArr[i] != NULL) numberOfReplies += setNumberOfReplies(cTree->cTreeArr[i]);
 		else break;
 	}
-	comPTR->numberOfReplies = numberOfReplies;
+	cTree->numberOfReplies = numberOfReplies;
 	return numberOfReplies+1;
 }
 
-void printComs(ComPTR comPTR1, int depth) {
-    int hasReplies = 0;
-    indentation(depth+1); printf("\"id\": \"%s\"\n", comPTR1->id);
-    indentation(depth+1); printf("\"user\": \"%s\"\n", comPTR1->user);
-    indentation(depth+1); printf("\"date\": \"%s\"\n", comPTR1->date);
+void printComs(CTree cTree, int depth) {
+    indentation(depth+1); printf("\"id\": \"%s\"\n", cTree->id);
+    indentation(depth+1); printf("\"user\": \"%s\"\n", cTree->user);
+    indentation(depth+1); printf("\"date\": \"%s\"\n", cTree->date);
     indentation(depth+1); printf("\"timestamp\": \"%s\"\n", "NA");
-    indentation(depth+1); printf("\"commentText\": \"%s\"\n", comPTR1->commentText);
-	indentation(depth+1); printf("\"likes\": %s\n", comPTR1->likes);
+    indentation(depth+1); printf("\"commentText\": \"%s\"\n", cTree->commentText);
+	indentation(depth+1); printf("\"likes\": %s\n", cTree->likes);
 	indentation(depth+1); printf("\"hasReplies\": ");
-	if (comPTR1->numberOfReplies == 0) printf("False\n"); else printf("True\n");
-	indentation(depth+1); printf("\"numberOfReplies\": %i\n", comPTR1->numberOfReplies);
-    for (int i = 0; i < 25; i++) {
-        if (comPTR1->comPTRArr[i] != NULL) hasReplies = 1; break;
-    }
-    if (hasReplies == 0) {
+	if (cTree->numberOfReplies == 0) printf("False\n"); else printf("True\n");
+	indentation(depth+1); printf("\"numberOfReplies\": %i\n", cTree->numberOfReplies);
+    if (cTree->numberOfReplies == 0) {
         indentation(depth+1); printf("\"replies\": []\n");
     }
     else {
         indentation(depth+1); printf("\"replies\": [\n");
-        for (int i = 0; i < 24; i++) {
-            if (comPTR1->comPTRArr[i] != NULL) {
-                printComs(comPTR1->comPTRArr[i], depth+2);
+        for (int i=0;i<25;i++) {
+            if (cTree->cTreeArr[i] != NULL) {
+                printComs(cTree->cTreeArr[i], depth+2);
             }
             else break;
         }
     }
 }
 
-void fillmTreeLoc(int mTreeLoc[]) {for (i=0;i<25;i++) mTreeLoc[i] = -1;}
+void fillcTreePos(int cTreePos[]) {for (int i=0;i<25;i++) cTreePos[i] = -1;}
 
-void printmtreeloc(int mTreeLoc[]) {
-	for (i=0;i<25;i++) printf("%i", mTreeLoc[i]);
+void printmtreeloc(int cTreePos[]) {
+	for (int i=0;i<25;i++) printf("%i", cTreePos[i]);
     printf("\n");
 }
 
-void indentation(int n) {for (i = 0; i < n; i++) printf("    ");}
+void indentation(int n) {for (int i=0;i<n;i++) printf("    ");}
 
 %}
 
@@ -142,14 +136,14 @@ END_LIKES                   \<\/span\>
 %%
 
 {START_LI_POST_TAG} {
-	mTreeLoc[count]++;
-    comPTR2 = createComment();
-	count++;
+	cTreePos[depth]++;
+    cTreeTMP = createComment();
+	depth++;
 	yy_push_state(COMMENT);
 }
 
 <COMMENT>[0-9]{10}/(\"\>\<div[' ']role=\"alert\"\>\<\/div\>) {
-	setID(comPTR2, yytext);
+	setID(cTreeTMP, yytext);
 }
 
 <COMMENT>{START_USERNAME_TAG} {
@@ -157,7 +151,7 @@ END_LIKES                   \<\/span\>
 }
 
 <USERNAME>.+/{END_USERNAME_TAG} {
-    setUser(comPTR2, yytext);
+    setUser(cTreeTMP, yytext);
 	yy_pop_state();
 }
 
@@ -166,7 +160,7 @@ END_LIKES                   \<\/span\>
 }
 
 <DATE>.+ago/\<\/a\> {
-    setDate(comPTR2, yytext);
+    setDate(cTreeTMP, yytext);
 	yy_pop_state();
 }
 
@@ -175,7 +169,7 @@ END_LIKES                   \<\/span\>
 }
 
 <CONTENT>(\<\/[^d]|\<[^\/]|[^\<])*/{END_POST_MESSAGE_TAG} {
-    setCommentText(comPTR2, yytext);
+    setCommentText(cTreeTMP, yytext);
 	yy_pop_state();
 }
 
@@ -184,22 +178,22 @@ END_LIKES                   \<\/span\>
 }
 
 <LIKE>[0-9]+ {
-	setLikes(comPTR2, yytext);
-    mTreeInserter(&comPTR1, mTreeLoc, comPTR2);
-    comPTR2 = NULL;
+	setLikes(cTreeTMP, yytext);
+    mTreeInserter(&cTree, cTreePos, cTreeTMP);
+    cTreeTMP = NULL;
     yy_pop_state();
 }
 
 <COMMENT>{END_LI_POST_TAG} {
-	mTreeLoc[count] = -1;
-	count--;
-    if (count == 0) {
-        if (count2 != 0) printf(",\n");
-        count2 = 1;
+	cTreePos[depth] = -1;
+	depth--;
+    if (depth == 0) {
+        if (count != 0) printf(",\n");
+        count = 1;
         indentation(1); printf("{\n");
-		setNumberOfReplies(comPTR1);
-        printComs(comPTR1, 1);
-        comPTR1 = NULL;
+		setNumberOfReplies(cTree);
+        printComs(cTree, 1);
+        cTree = NULL;
         indentation(1); printf("}");
     }
 	yy_pop_state();
@@ -215,8 +209,8 @@ int yywrap() {
 }
 
 int main(){
-	comPTR1 = NULL;
-	fillmTreeLoc(mTreeLoc);
+	cTree = NULL;
+	fillcTreePos(cTreePos);
     printf("\"commentThread\": [\n");
 	yylex(); return 0;
 }
