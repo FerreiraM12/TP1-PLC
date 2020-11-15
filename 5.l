@@ -10,6 +10,7 @@ typedef struct Comment {
     const char* commentText;
     const char* likes;
     int numberOfReplies;
+    int index;
     struct Comment* cTreeArr[25];
 } *CTree, Comment;
 
@@ -18,12 +19,15 @@ CTree cTreeTMP;
 
 int depth = 0;
 int count = 0;
+int num = 0;
 int cTreePos[25];
+int depthsArr[100];
 
 void mTreeInserter(CTree*, int*, CTree);
 void mTreeInserterAUX(CTree*, int*, int, CTree);
 CTree cloneComment(CTree);
 CTree createComment();
+void insertNextDepth(CTree, int, int);
 void setID(CTree, char*);
 void setUser(CTree, char*);
 void setDate(CTree, char*);
@@ -54,6 +58,7 @@ CTree cloneComment(CTree cTreeTMP) {
     cTree->commentText = strdup(cTreeTMP->commentText);
     cTree->likes = strdup(cTreeTMP->likes);
     cTree->numberOfReplies = cTreeTMP->numberOfReplies;
+    cTree->index = cTreeTMP->index;
     for(int i=0;i<25;i++) cTreeTMP->cTreeArr[i] = NULL;
     return cTree;
 }
@@ -80,6 +85,9 @@ int setNumberOfReplies(CTree cTree) {
 }
 
 void printComs(CTree cTree, int depth) {
+
+    int previousDepth;
+
     indentation(depth+1); printf("\"id\": \"%s\"\n", cTree->id);
     indentation(depth+1); printf("\"user\": \"%s\"\n", cTree->user);
     indentation(depth+1); printf("\"date\": \"%s\"\n", cTree->date);
@@ -94,10 +102,20 @@ void printComs(CTree cTree, int depth) {
     } else {
         indentation(depth+1); printf("\"replies\": [\n");
         for (int i=0;i<25;i++) {
+            
             if (cTree->cTreeArr[i]) { // cTree->cTreeArr[i] é o mesmo que cTree->cTreeArr[i] != NULL
+                indentation(depth+2); printf("{\n");
                 printComs(cTree->cTreeArr[i], depth+2);
+                indentation(depth+2); printf("}");
+                if (cTree->cTreeArr[i+1] != NULL) {
+                    printf(",\n");
+                } else {
+                    printf("\n");
+                }
             } else break;
+
         }
+        indentation(depth+1); printf("]\n");
     }
 }
 
@@ -107,11 +125,11 @@ void indentation(int n) {for (int i=0;i<n;i++) printf("    ");}
 
 %}
 
-START_COMMENT                 \<li[' ']class=\"post\"[' ']id=\"post-
+START_COMMENT               \<li[' ']class=\"post\"[' ']id=\"post-
 ID_RE                       \"\>\<div[' ']role=\"alert\"\>\<\/div\>
-END_COMMENT                    Show[' ']more[' ']replies\<\/a\>\n\<\/div\>\n\<\/div\>\n\<\/li\>
+END_COMMENT                 Show[' ']more[' ']replies\<\/a\>\n\<\/div\>\n\<\/div\>\n\<\/li\>
 
-START_USERNAME                \<a[' ']data-action=\"profile\"[' ']data-username=\"
+START_USERNAME              \<a[' ']data-action=\"profile\"[' ']data-username=\"
 END_USERNAME                \"[' ']href
 
 START_DATE                  \<a[' ']class=\"time-ago.+\"\>
@@ -129,7 +147,10 @@ START_LIKES                 data-role=\"likes\"\>
 {START_COMMENT} {
     cTreePos[depth]++;
     cTreeTMP = createComment();
+    cTreeTMP->index = num;
+    depthsArr[num] = depth;
     depth++;
+    num++;
     yy_push_state(COMMENT);
 }
 
@@ -181,11 +202,15 @@ START_LIKES                 data-role=\"likes\"\>
     if (!depth) { //!depth é o mesmo que depth == 0
         if (count) printf(",\n"); //count != 0 é o mesmo que !count
         count = 1;
-        indentation(1); printf("{\n");
+        indentation(1); 
+        printf("{\n");
         setNumberOfReplies(cTree);
         printComs(cTree, 1);
         cTree = NULL;
-        indentation(1); printf("}");
+
+        num = 0;
+        indentation(1); 
+        printf("}");
     }
     yy_pop_state();
 }

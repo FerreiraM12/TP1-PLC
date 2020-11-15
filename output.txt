@@ -21,6 +21,7 @@ solucao possivel para o brasil. Nao dah para construir um pais com gente
         "hasReplies": True
         "numberOfReplies": 2
         "replies": [
+            {
                 "id": "4867467802"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -31,6 +32,7 @@ solucao possivel para o brasil. Nao dah para construir um pais com gente
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4884149120"
                         "user": "lisboabikes"
                         "date": "a month ago"
@@ -43,6 +45,10 @@ ainda toma a mentira como verdade.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4867126770"
@@ -76,6 +82,7 @@ ainda toma a mentira como verdade.</p>"
         "hasReplies": True
         "numberOfReplies": 4
         "replies": [
+            {
                 "id": "4867465424"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -88,6 +95,7 @@ ter saido da selva</p>"
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867674631"
                         "user": "disqus_OJwKMdU4aq"
                         "date": "2 months ago"
@@ -97,6 +105,10 @@ ter saido da selva</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4867225039"
                 "user": "disqus_OZLWh3MmOO"
                 "date": "2 months ago"
@@ -106,6 +118,7 @@ ter saido da selva</p>"
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867459494"
                         "user": "papagaiofaxista"
                         "date": "2 months ago"
@@ -115,6 +128,10 @@ ter saido da selva</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866976908"
@@ -129,6 +146,7 @@ esquerdopatas  fd...nem com o monopolio da imprensa e as vossas mentiras
         "hasReplies": True
         "numberOfReplies": 14
         "replies": [
+            {
                 "id": "4867101983"
                 "user": "pitu_na"
                 "date": "2 months ago"
@@ -141,6 +159,7 @@ radicais. Que bela base de apoio...<br>Ja tens vestida a bata azul?</p>"
                 "hasReplies": True
                 "numberOfReplies": 9
                 "replies": [
+                    {
                         "id": "4867292408"
                         "user": "Lince_Iberico"
                         "date": "2 months ago"
@@ -150,6 +169,8 @@ radicais. Que bela base de apoio...<br>Ja tens vestida a bata azul?</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867234020"
                         "user": "alfonsocontorno"
                         "date": "2 months ago"
@@ -159,6 +180,7 @@ radicais. Que bela base de apoio...<br>Ja tens vestida a bata azul?</p>"
                         "hasReplies": True
                         "numberOfReplies": 6
                         "replies": [
+                            {
                                 "id": "4868201256"
                                 "user": "disqus_yznlqTO3Sh"
                                 "date": "2 months ago"
@@ -173,6 +195,7 @@ FICAR IGUAL, JÁ É UMA VANTAGEM !</b>
                                 "hasReplies": True
                                 "numberOfReplies": 5
                                 "replies": [
+                                    {
                                         "id": "4868257256"
                                         "user": "alfonsocontorno"
                                         "date": "2 months ago"
@@ -182,6 +205,7 @@ FICAR IGUAL, JÁ É UMA VANTAGEM !</b>
                                         "hasReplies": True
                                         "numberOfReplies": 4
                                         "replies": [
+                                            {
                                                 "id": "4868293332"
                                                 "user": "disqus_yznlqTO3Sh"
                                                 "date": "2 months ago"
@@ -192,6 +216,7 @@ FICAR IGUAL, JÁ É UMA VANTAGEM !</b>
                                                 "hasReplies": True
                                                 "numberOfReplies": 3
                                                 "replies": [
+                                                    {
                                                         "id": "4868313050"
                                                         "user": "alfonsocontorno"
                                                         "date": "2 months ago"
@@ -207,6 +232,7 @@ democratas os outros são do Trump</p>"
                                                         "hasReplies": True
                                                         "numberOfReplies": 2
                                                         "replies": [
+                                                            {
                                                                 "id": "4868315843"
                                                                 "user": "disqus_yznlqTO3Sh"
                                                                 "date": "2 months ago"
@@ -222,6 +248,7 @@ SENDO UMA DITADURA CONTROLADORA COMUNISTA.</b>
                                                                 "hasReplies": True
                                                                 "numberOfReplies": 1
                                                                 "replies": [
+                                                                    {
                                                                         "id": "4868661806"
                                                                         "user": "alfonsocontorno"
                                                                         "date": "2 months ago"
@@ -239,6 +266,20 @@ EUA........vai ler e vê onde está a fábrica....para não variar está
                                                                         "hasReplies": False
                                                                         "numberOfReplies": 0
                                                                         "replies": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "id": "4867233153"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -253,6 +294,10 @@ socialistas como bem o demonstra.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4867054687"
                 "user": "disqus_80bBIeF4jj"
                 "date": "2 months ago"
@@ -262,6 +307,7 @@ socialistas como bem o demonstra.</p>"
                 "hasReplies": True
                 "numberOfReplies": 3
                 "replies": [
+                    {
                         "id": "4867236081"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -274,6 +320,7 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4867265931"
                                 "user": "disqus_3C5CQ1K6jb"
                                 "date": "2 months ago"
@@ -283,6 +330,10 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    },
+                    {
                         "id": "4867234444"
                         "user": "alfonsocontorno"
                         "date": "2 months ago"
@@ -292,6 +343,10 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866963141"
@@ -305,6 +360,7 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
         "hasReplies": True
         "numberOfReplies": 6
         "replies": [
+            {
                 "id": "4867123392"
                 "user": "disqus_80bBIeF4jj"
                 "date": "2 months ago"
@@ -314,6 +370,7 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                 "hasReplies": True
                 "numberOfReplies": 3
                 "replies": [
+                    {
                         "id": "4867446229"
                         "user": "papagaiofaxista"
                         "date": "2 months ago"
@@ -323,6 +380,8 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867267760"
                         "user": "disqus_3C5CQ1K6jb"
                         "date": "2 months ago"
@@ -332,6 +391,8 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867237912"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -341,6 +402,10 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4867102519"
                 "user": "pitu_na"
                 "date": "2 months ago"
@@ -350,6 +415,7 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867242795"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -359,6 +425,10 @@ representa, basta olhar para a contagem dos mortos ao longo da historia,
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866941101"
@@ -384,6 +454,7 @@ igualdade de oportunidades para todos, mais justiça, menos corrupção,
         "hasReplies": True
         "numberOfReplies": 7
         "replies": [
+            {
                 "id": "4868194282"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -396,6 +467,8 @@ igualdade de oportunidades para todos, mais justiça, menos corrupção,
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4867126425"
                 "user": "disqus_80bBIeF4jj"
                 "date": "2 months ago"
@@ -411,6 +484,7 @@ saúde como você de comunistas e eu de lagares de azeite...</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4867262452"
                         "user": "disqus_3C5CQ1K6jb"
                         "date": "2 months ago"
@@ -420,6 +494,8 @@ saúde como você de comunistas e eu de lagares de azeite...</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867236680"
                         "user": "alfonsocontorno"
                         "date": "2 months ago"
@@ -432,6 +508,10 @@ que enviava dinheiro para Cuba quando foi governo....diga lá comuna</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4867103479"
                 "user": "pitu_na"
                 "date": "2 months ago"
@@ -441,6 +521,7 @@ que enviava dinheiro para Cuba quando foi governo....diga lá comuna</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4867245502"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -450,6 +531,8 @@ que enviava dinheiro para Cuba quando foi governo....diga lá comuna</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867238927"
                         "user": "alfonsocontorno"
                         "date": "2 months ago"
@@ -462,6 +545,10 @@ concidadãos e diz que foram 3000...</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866928972"
@@ -473,6 +560,7 @@ concidadãos e diz que foram 3000...</p>"
         "hasReplies": True
         "numberOfReplies": 7
         "replies": [
+            {
                 "id": "4867138633"
                 "user": "disqus_80bBIeF4jj"
                 "date": "2 months ago"
@@ -482,6 +570,7 @@ concidadãos e diz que foram 3000...</p>"
                 "hasReplies": True
                 "numberOfReplies": 6
                 "replies": [
+                    {
                         "id": "4868212698"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -492,6 +581,8 @@ concidadãos e diz que foram 3000...</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4868188077"
                         "user": "disqus_3C5CQ1K6jb"
                         "date": "2 months ago"
@@ -501,6 +592,8 @@ concidadãos e diz que foram 3000...</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4868174513"
                         "user": "disqus_3C5CQ1K6jb"
                         "date": "2 months ago"
@@ -510,6 +603,8 @@ concidadãos e diz que foram 3000...</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867493015"
                         "user": "disqus_9PK1avpNXI"
                         "date": "2 months ago"
@@ -519,6 +614,8 @@ concidadãos e diz que foram 3000...</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867248667"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -531,6 +628,8 @@ estranho a um estado despota e totalitario como os que aprecia...</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867229296"
                         "user": "alfonsocontorno"
                         "date": "2 months ago"
@@ -543,6 +642,10 @@ Países.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866924586"
@@ -557,6 +660,7 @@ ainda na Europa poucos estavam a morrer.<br>Mas os inteligentes europeus não qu
         "hasReplies": True
         "numberOfReplies": 9
         "replies": [
+            {
                 "id": "4868216893"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -578,6 +682,8 @@ ainda na Europa poucos estavam a morrer.<br>Mas os inteligentes europeus não qu
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4867127313"
                 "user": "disqus_80bBIeF4jj"
                 "date": "2 months ago"
@@ -587,6 +693,7 @@ ainda na Europa poucos estavam a morrer.<br>Mas os inteligentes europeus não qu
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867248931"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -596,6 +703,10 @@ ainda na Europa poucos estavam a morrer.<br>Mas os inteligentes europeus não qu
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4867103995"
                 "user": "pitu_na"
                 "date": "2 months ago"
@@ -605,6 +716,7 @@ ainda na Europa poucos estavam a morrer.<br>Mas os inteligentes europeus não qu
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867249409"
                         "user": "disqus_OZLWh3MmOO"
                         "date": "2 months ago"
@@ -614,6 +726,10 @@ ainda na Europa poucos estavam a morrer.<br>Mas os inteligentes europeus não qu
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866964723"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -626,6 +742,7 @@ final é que Trump e Bolsonaro sao presidentes</p>"
                 "hasReplies": True
                 "numberOfReplies": 3
                 "replies": [
+                    {
                         "id": "4868230433"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -638,6 +755,8 @@ final é que Trump e Bolsonaro sao presidentes</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867115821"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -647,6 +766,7 @@ final é que Trump e Bolsonaro sao presidentes</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4867250725"
                                 "user": "disqus_OZLWh3MmOO"
                                 "date": "2 months ago"
@@ -656,6 +776,12 @@ final é que Trump e Bolsonaro sao presidentes</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866923644"
@@ -667,6 +793,7 @@ final é que Trump e Bolsonaro sao presidentes</p>"
         "hasReplies": True
         "numberOfReplies": 8
         "replies": [
+            {
                 "id": "4867224204"
                 "user": "santosbrdsantos"
                 "date": "2 months ago"
@@ -676,6 +803,8 @@ final é que Trump e Bolsonaro sao presidentes</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866995969"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -690,6 +819,7 @@ achoo que ela merece) e no final a p...a ainda coloca-lhe um processo em
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4867116234"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -699,6 +829,7 @@ achoo que ela merece) e no final a p...a ainda coloca-lhe um processo em
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4867463994"
                                 "user": "papagaiofaxista"
                                 "date": "2 months ago"
@@ -710,6 +841,12 @@ achoo que ela merece) e no final a p...a ainda coloca-lhe um processo em
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "4866994312"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -719,6 +856,8 @@ achoo que ela merece) e no final a p...a ainda coloca-lhe um processo em
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866965557"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -730,6 +869,7 @@ achoo que ela merece) e no final a p...a ainda coloca-lhe um processo em
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4867116455"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -739,6 +879,7 @@ achoo que ela merece) e no final a p...a ainda coloca-lhe um processo em
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4867251323"
                                 "user": "disqus_OZLWh3MmOO"
                                 "date": "2 months ago"
@@ -748,6 +889,12 @@ achoo que ela merece) e no final a p...a ainda coloca-lhe um processo em
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866890445"
@@ -761,6 +908,7 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
         "hasReplies": True
         "numberOfReplies": 3
         "replies": [
+            {
                 "id": "4866997498"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -770,6 +918,7 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4867139555"
                         "user": "disqus_80bBIeF4jj"
                         "date": "2 months ago"
@@ -779,6 +928,8 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867116748"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -788,6 +939,10 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866871560"
@@ -799,6 +954,7 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
         "hasReplies": True
         "numberOfReplies": 3
         "replies": [
+            {
                 "id": "4868235311"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -809,6 +965,8 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866998413"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -818,6 +976,7 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867120105"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -827,6 +986,10 @@ ainda não aprenderam que elegeram um imbecil e ignorante.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866841776"
@@ -848,6 +1011,7 @@ os ajude.</p>"
         "hasReplies": True
         "numberOfReplies": 7
         "replies": [
+            {
                 "id": "4866999475"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -860,6 +1024,7 @@ de vida nada tem a ver, quando é que estes imbecis vao entender isso ao
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4888164203"
                         "user": "disqus_mc0oi89ymb"
                         "date": "a month ago"
@@ -873,6 +1038,8 @@ rico mas é para os bolsos de alguns. Não ajudá-los É MATÁ-LOS.<br>Você est
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4867119953"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -882,6 +1049,10 @@ rico mas é para os bolsos de alguns. Não ajudá-los É MATÁ-LOS.<br>Você est
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866877170"
                 "user": "daltoncamargo"
                 "date": "2 months ago"
@@ -897,6 +1068,7 @@ sabemos que a fome mata muito mais do que uma gripe.</p>"
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4888221085"
                         "user": "disqus_mc0oi89ymb"
                         "date": "a month ago"
@@ -906,6 +1078,10 @@ sabemos que a fome mata muito mais do que uma gripe.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866842765"
                 "user": "lisboabikes"
                 "date": "2 months ago"
@@ -915,6 +1091,7 @@ sabemos que a fome mata muito mais do que uma gripe.</p>"
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4888221597"
                         "user": "disqus_mc0oi89ymb"
                         "date": "a month ago"
@@ -924,6 +1101,10 @@ sabemos que a fome mata muito mais do que uma gripe.</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866809700"
@@ -940,6 +1121,7 @@ desenvoltura da doença no Brasil, e depois julguem!</p>"
         "hasReplies": True
         "numberOfReplies": 17
         "replies": [
+            {
                 "id": "4868250988"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -962,6 +1144,8 @@ DIVULGADOS ... VOCES COM 2 MESES OU MAIS, O QUE PREVENIRAM???</b>
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4867107692"
                 "user": "biatcheslater"
                 "date": "2 months ago"
@@ -977,6 +1161,8 @@ que Bolsonaro queria.<br>Será que isso teve alguma influência na propagação 
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866881295"
                 "user": "Paulo_Pedro_Pinto"
                 "date": "2 months ago"
@@ -986,6 +1172,8 @@ que Bolsonaro queria.<br>Será que isso teve alguma influência na propagação 
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866862900"
                 "user": "ant_checo"
                 "date": "2 months ago"
@@ -995,6 +1183,7 @@ que Bolsonaro queria.<br>Será que isso teve alguma influência na propagação 
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4868269175"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -1022,6 +1211,10 @@ que Bolsonaro queria.<br>Será que isso teve alguma influência na propagação 
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866842133"
                 "user": "lisboabikes"
                 "date": "2 months ago"
@@ -1035,6 +1228,7 @@ tem andado a patinar na maionese. Um desastre a gerir esta crise... Não
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4868284903"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -1049,6 +1243,7 @@ tem andado a patinar na maionese. Um desastre a gerir esta crise... Não
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4898248263"
                                 "user": "lisboabikes"
                                 "date": "24 days ago"
@@ -1060,6 +1255,12 @@ fininho.... Quando lhe toca no egocentrismo são umas vítimas...</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "4866841893"
                 "user": "disqus_KmKUFi7kcq"
                 "date": "2 months ago"
@@ -1069,6 +1270,8 @@ fininho.... Quando lhe toca no egocentrismo são umas vítimas...</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866828702"
                 "user": "disqus_L4yF9Q0lhX"
                 "date": "2 months ago"
@@ -1085,6 +1288,7 @@ sobre isso?</p>"
                 "hasReplies": True
                 "numberOfReplies": 6
                 "replies": [
+                    {
                         "id": "4868280637"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -1107,6 +1311,8 @@ sobre isso?</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4866967300"
                         "user": "papagaiofaxista"
                         "date": "2 months ago"
@@ -1118,6 +1324,7 @@ sobre isso?</p>"
                         "hasReplies": True
                         "numberOfReplies": 4
                         "replies": [
+                            {
                                 "id": "4867295265"
                                 "user": "disqus_L4yF9Q0lhX"
                                 "date": "2 months ago"
@@ -1129,6 +1336,7 @@ atrás de um nickname. É uma questão de educação. Cumprimentos.</p>"
                                 "hasReplies": True
                                 "numberOfReplies": 1
                                 "replies": [
+                                    {
                                         "id": "4881829641"
                                         "user": "papagaiofaxista"
                                         "date": "a month ago"
@@ -1138,6 +1346,10 @@ atrás de um nickname. É uma questão de educação. Cumprimentos.</p>"
                                         "hasReplies": False
                                         "numberOfReplies": 0
                                         "replies": []
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "4867119058"
                                 "user": "pitu_na"
                                 "date": "2 months ago"
@@ -1147,6 +1359,7 @@ atrás de um nickname. É uma questão de educação. Cumprimentos.</p>"
                                 "hasReplies": True
                                 "numberOfReplies": 1
                                 "replies": [
+                                    {
                                         "id": "4867142598"
                                         "user": "disqus_80bBIeF4jj"
                                         "date": "2 months ago"
@@ -1156,6 +1369,14 @@ atrás de um nickname. É uma questão de educação. Cumprimentos.</p>"
                                         "hasReplies": False
                                         "numberOfReplies": 0
                                         "replies": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "4866812545"
                 "user": "disqus_EJLoQqNK0r"
                 "date": "2 months ago"
@@ -1165,6 +1386,8 @@ atrás de um nickname. É uma questão de educação. Cumprimentos.</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            }
+        ]
     },
     {
         "id": "4866800972"
@@ -1180,6 +1403,7 @@ ministro trabalhar á vontade....não o demitindo !!!</p>"
         "hasReplies": True
         "numberOfReplies": 4
         "replies": [
+            {
                 "id": "4866878732"
                 "user": "daltoncamargo"
                 "date": "2 months ago"
@@ -1194,6 +1418,7 @@ deu xeque mate no Mandeta. Ou tu aceita, ou cai fora.</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4867118340"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -1203,6 +1428,7 @@ deu xeque mate no Mandeta. Ou tu aceita, ou cai fora.</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4867338662"
                                 "user": "daltoncamargo"
                                 "date": "2 months ago"
@@ -1212,6 +1438,12 @@ deu xeque mate no Mandeta. Ou tu aceita, ou cai fora.</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "4866811241"
                 "user": "disqus_dcSSaHfw0o"
                 "date": "2 months ago"
@@ -1221,6 +1453,8 @@ deu xeque mate no Mandeta. Ou tu aceita, ou cai fora.</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            }
+        ]
     },
     {
         "id": "4866794463"
@@ -1243,6 +1477,7 @@ Genéticamente lhes pertence : a Cauda da Europa !</p>"
         "hasReplies": True
         "numberOfReplies": 2
         "replies": [
+            {
                 "id": "4867212350"
                 "user": "biatcheslater"
                 "date": "2 months ago"
@@ -1255,6 +1490,8 @@ pobreza, segurança, saúde, educação, corrupção.<br>Assim como os restantes
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866927438"
                 "user": "disqus_mIu5voRgws"
                 "date": "2 months ago"
@@ -1271,6 +1508,8 @@ recompôs-se com o Plano Marshall, para fazer frente �&nbsp; URSS! Coisa
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            }
+        ]
     },
     {
         "id": "4866793945"
@@ -1286,6 +1525,7 @@ causadas pelo corona não são considradas como tal !!!</p>"
         "hasReplies": True
         "numberOfReplies": 3
         "replies": [
+            {
                 "id": "4866812241"
                 "user": "disqus_dcSSaHfw0o"
                 "date": "2 months ago"
@@ -1295,6 +1535,7 @@ causadas pelo corona não são considradas como tal !!!</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4867117684"
                         "user": "pitu_na"
                         "date": "2 months ago"
@@ -1304,6 +1545,8 @@ causadas pelo corona não são considradas como tal !!!</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4866855641"
                         "user": "Meliodasreidosdemonios"
                         "date": "2 months ago"
@@ -1313,6 +1556,10 @@ causadas pelo corona não são considradas como tal !!!</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866791853"
@@ -1324,6 +1571,7 @@ causadas pelo corona não são considradas como tal !!!</p>"
         "hasReplies": True
         "numberOfReplies": 4
         "replies": [
+            {
                 "id": "4867117433"
                 "user": "pitu_na"
                 "date": "2 months ago"
@@ -1333,6 +1581,7 @@ causadas pelo corona não são considradas como tal !!!</p>"
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867159245"
                         "user": "alfonsocontorno"
                         "date": "2 months ago"
@@ -1342,6 +1591,10 @@ causadas pelo corona não são considradas como tal !!!</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866805443"
                 "user": "relvas_analytics"
                 "date": "2 months ago"
@@ -1355,6 +1608,8 @@ Bolsonaro! ...alguém te obrigou a vir aqui? ...se não gostas lê a
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866795471"
                 "user": "disqus_E84kZQfUeN"
                 "date": "2 months ago"
@@ -1364,6 +1619,8 @@ Bolsonaro! ...alguém te obrigou a vir aqui? ...se não gostas lê a
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            }
+        ]
     },
     {
         "id": "4866789351"
@@ -1389,6 +1646,7 @@ Casa  !!</p>"
         "hasReplies": True
         "numberOfReplies": 4
         "replies": [
+            {
                 "id": "4866928706"
                 "user": "disqus_mIu5voRgws"
                 "date": "2 months ago"
@@ -1398,6 +1656,8 @@ Casa  !!</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866799338"
                 "user": "relvas_analytics"
                 "date": "2 months ago"
@@ -1408,6 +1668,7 @@ Casa  !!</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4866928859"
                         "user": "disqus_mIu5voRgws"
                         "date": "2 months ago"
@@ -1417,6 +1678,7 @@ Casa  !!</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4866958289"
                                 "user": "relvas_analytics"
                                 "date": "2 months ago"
@@ -1427,6 +1689,12 @@ Casa  !!</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866781228"
@@ -1476,6 +1744,7 @@ contaminação alastre.</b>
         "hasReplies": True
         "numberOfReplies": 10
         "replies": [
+            {
                 "id": "4867162178"
                 "user": "alfonsocontorno"
                 "date": "2 months ago"
@@ -1485,6 +1754,8 @@ contaminação alastre.</b>
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866803687"
                 "user": "disqus_dcSSaHfw0o"
                 "date": "2 months ago"
@@ -1494,6 +1765,7 @@ contaminação alastre.</b>
                 "hasReplies": True
                 "numberOfReplies": 8
                 "replies": [
+                    {
                         "id": "4866847319"
                         "user": "disqus_KmKUFi7kcq"
                         "date": "2 months ago"
@@ -1503,6 +1775,8 @@ contaminação alastre.</b>
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4866810681"
                         "user": "relvas_analytics"
                         "date": "2 months ago"
@@ -1513,6 +1787,7 @@ contaminação alastre.</b>
                         "hasReplies": True
                         "numberOfReplies": 6
                         "replies": [
+                            {
                                 "id": "4867162493"
                                 "user": "alfonsocontorno"
                                 "date": "2 months ago"
@@ -1522,6 +1797,8 @@ contaminação alastre.</b>
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            },
+                            {
                                 "id": "4866814021"
                                 "user": "disqus_dcSSaHfw0o"
                                 "date": "2 months ago"
@@ -1531,6 +1808,7 @@ contaminação alastre.</b>
                                 "hasReplies": True
                                 "numberOfReplies": 4
                                 "replies": [
+                                    {
                                         "id": "4866888833"
                                         "user": "relvas_analytics"
                                         "date": "2 months ago"
@@ -1552,6 +1830,7 @@ Indonésia, Arabia Saudita, México, Colombia, Argentina, Ucrânia, etc.
                                         "hasReplies": True
                                         "numberOfReplies": 1
                                         "replies": [
+                                            {
                                                 "id": "4867163637"
                                                 "user": "alfonsocontorno"
                                                 "date": "2 months ago"
@@ -1561,6 +1840,10 @@ Indonésia, Arabia Saudita, México, Colombia, Argentina, Ucrânia, etc.
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "id": "4866833154"
                                         "user": "disqus_cBccy1PhIj"
                                         "date": "2 months ago"
@@ -1570,6 +1853,7 @@ Indonésia, Arabia Saudita, México, Colombia, Argentina, Ucrânia, etc.
                                         "hasReplies": True
                                         "numberOfReplies": 1
                                         "replies": [
+                                            {
                                                 "id": "4866890647"
                                                 "user": "relvas_analytics"
                                                 "date": "2 months ago"
@@ -1580,6 +1864,16 @@ Indonésia, Arabia Saudita, México, Colombia, Argentina, Ucrânia, etc.
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866762617"
@@ -1660,6 +1954,7 @@ matar. já o covid-19 mata em horas!</p>"
         "hasReplies": True
         "numberOfReplies": 2
         "replies": [
+            {
                 "id": "4866742909"
                 "user": "Wallace40"
                 "date": "2 months ago"
@@ -1672,6 +1967,7 @@ que muitos não viram e votaram nele é simplesmente abismal.<br>O outro é o Tr
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4866748844"
                         "user": "disqus_RZYKPl8qIQ"
                         "date": "2 months ago"
@@ -1681,6 +1977,10 @@ que muitos não viram e votaram nele é simplesmente abismal.<br>O outro é o Tr
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866693619"
@@ -1692,6 +1992,7 @@ que muitos não viram e votaram nele é simplesmente abismal.<br>O outro é o Tr
         "hasReplies": True
         "numberOfReplies": 20
         "replies": [
+            {
                 "id": "4866749993"
                 "user": "disqus_ddfkjFHeb3"
                 "date": "2 months ago"
@@ -1701,6 +2002,7 @@ que muitos não viram e votaram nele é simplesmente abismal.<br>O outro é o Tr
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4866834365"
                         "user": "disqus_cBccy1PhIj"
                         "date": "2 months ago"
@@ -1711,6 +2013,10 @@ que muitos não viram e votaram nele é simplesmente abismal.<br>O outro é o Tr
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866742666"
                 "user": "br27"
                 "date": "2 months ago"
@@ -1720,6 +2026,7 @@ que muitos não viram e votaram nele é simplesmente abismal.<br>O outro é o Tr
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4866744900"
                         "user": "disqus_cBccy1PhIj"
                         "date": "2 months ago"
@@ -1729,6 +2036,7 @@ que muitos não viram e votaram nele é simplesmente abismal.<br>O outro é o Tr
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4875740168"
                                 "user": "br27"
                                 "date": "a month ago"
@@ -1741,6 +2049,12 @@ nao joga com o baralho todo.</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "4866702580"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -1751,6 +2065,7 @@ nao joga com o baralho todo.</p>"
                 "hasReplies": True
                 "numberOfReplies": 14
                 "replies": [
+                    {
                         "id": "4866733456"
                         "user": "disqus_cBccy1PhIj"
                         "date": "2 months ago"
@@ -1760,6 +2075,7 @@ nao joga com o baralho todo.</p>"
                         "hasReplies": True
                         "numberOfReplies": 13
                         "replies": [
+                            {
                                 "id": "4866739588"
                                 "user": "disqus_yznlqTO3Sh"
                                 "date": "2 months ago"
@@ -1769,6 +2085,7 @@ nao joga com o baralho todo.</p>"
                                 "hasReplies": True
                                 "numberOfReplies": 12
                                 "replies": [
+                                    {
                                         "id": "4866926786"
                                         "user": "disqus_3C5CQ1K6jb"
                                         "date": "2 months ago"
@@ -1778,6 +2095,7 @@ nao joga com o baralho todo.</p>"
                                         "hasReplies": True
                                         "numberOfReplies": 11
                                         "replies": [
+                                            {
                                                 "id": "4868126992"
                                                 "user": "disqus_yznlqTO3Sh"
                                                 "date": "2 months ago"
@@ -1792,6 +2110,7 @@ nao joga com o baralho todo.</p>"
                                                 "hasReplies": True
                                                 "numberOfReplies": 10
                                                 "replies": [
+                                                    {
                                                         "id": "4868183610"
                                                         "user": "disqus_3C5CQ1K6jb"
                                                         "date": "2 months ago"
@@ -1801,6 +2120,8 @@ nao joga com o baralho todo.</p>"
                                                         "hasReplies": False
                                                         "numberOfReplies": 0
                                                         "replies": []
+                                                    },
+                                                    {
                                                         "id": "4868170439"
                                                         "user": "disqus_3C5CQ1K6jb"
                                                         "date": "2 months ago"
@@ -1810,6 +2131,7 @@ nao joga com o baralho todo.</p>"
                                                         "hasReplies": True
                                                         "numberOfReplies": 7
                                                         "replies": [
+                                                            {
                                                                 "id": "4868172589"
                                                                 "user": "disqus_yznlqTO3Sh"
                                                                 "date": "2 months ago"
@@ -1822,6 +2144,7 @@ nao joga com o baralho todo.</p>"
                                                                 "hasReplies": True
                                                                 "numberOfReplies": 6
                                                                 "replies": [
+                                                                    {
                                                                         "id": "4868214390"
                                                                         "user": "disqus_3C5CQ1K6jb"
                                                                         "date": "2 months ago"
@@ -1831,6 +2154,8 @@ nao joga com o baralho todo.</p>"
                                                                         "hasReplies": False
                                                                         "numberOfReplies": 0
                                                                         "replies": []
+                                                                    },
+                                                                    {
                                                                         "id": "4868195549"
                                                                         "user": "disqus_3C5CQ1K6jb"
                                                                         "date": "2 months ago"
@@ -1840,6 +2165,7 @@ nao joga com o baralho todo.</p>"
                                                                         "hasReplies": True
                                                                         "numberOfReplies": 4
                                                                         "replies": [
+                                                                            {
                                                                                 "id": "4868207360"
                                                                                 "user": "disqus_yznlqTO3Sh"
                                                                                 "date": "2 months ago"
@@ -1856,6 +2182,7 @@ nao joga com o baralho todo.</p>"
                                                                                 "hasReplies": True
                                                                                 "numberOfReplies": 3
                                                                                 "replies": [
+                                                                                    {
                                                                                         "id": "4868244207"
                                                                                         "user": "disqus_3C5CQ1K6jb"
                                                                                         "date": "2 months ago"
@@ -1868,6 +2195,7 @@ pela positiva.</p>"
                                                                                         "hasReplies": True
                                                                                         "numberOfReplies": 2
                                                                                         "replies": [
+                                                                                            {
                                                                                                 "id": "4868295846"
                                                                                                 "user": "disqus_yznlqTO3Sh"
                                                                                                 "date": "2 months ago"
@@ -1882,6 +2210,7 @@ pela positiva.</p>"
                                                                                                 "hasReplies": True
                                                                                                 "numberOfReplies": 1
                                                                                                 "replies": [
+                                                                                                    {
                                                                                                         "id": "4868850970"
                                                                                                         "user": "disqus_3C5CQ1K6jb"
                                                                                                         "date": "2 months ago"
@@ -1891,6 +2220,20 @@ pela positiva.</p>"
                                                                                                         "hasReplies": False
                                                                                                         "numberOfReplies": 0
                                                                                                         "replies": []
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "id": "4868164629"
                                                         "user": "disqus_3C5CQ1K6jb"
                                                         "date": "2 months ago"
@@ -1900,6 +2243,18 @@ pela positiva.</p>"
                                                         "hasReplies": False
                                                         "numberOfReplies": 0
                                                         "replies": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866692452"
@@ -1916,6 +2271,7 @@ nele não votaram!</p>
         "hasReplies": True
         "numberOfReplies": 29
         "replies": [
+            {
                 "id": "4866740214"
                 "user": "disqus_RZYKPl8qIQ"
                 "date": "2 months ago"
@@ -1925,6 +2281,7 @@ nele não votaram!</p>
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4866759529"
                         "user": "disqus_EJLoQqNK0r"
                         "date": "2 months ago"
@@ -1935,6 +2292,10 @@ nele não votaram!</p>
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866704947"
                 "user": "relvas_analytics"
                 "date": "2 months ago"
@@ -1945,6 +2306,7 @@ nele não votaram!</p>
                 "hasReplies": True
                 "numberOfReplies": 26
                 "replies": [
+                    {
                         "id": "4866713866"
                         "user": "disqus_EJLoQqNK0r"
                         "date": "2 months ago"
@@ -1955,6 +2317,7 @@ nele não votaram!</p>
                         "hasReplies": True
                         "numberOfReplies": 9
                         "replies": [
+                            {
                                 "id": "4866741703"
                                 "user": "disqus_RZYKPl8qIQ"
                                 "date": "2 months ago"
@@ -1964,6 +2327,7 @@ nele não votaram!</p>
                                 "hasReplies": True
                                 "numberOfReplies": 4
                                 "replies": [
+                                    {
                                         "id": "4866754606"
                                         "user": "disqus_EJLoQqNK0r"
                                         "date": "2 months ago"
@@ -1975,6 +2339,7 @@ nele não votaram!</p>
                                         "hasReplies": True
                                         "numberOfReplies": 3
                                         "replies": [
+                                            {
                                                 "id": "4866755709"
                                                 "user": "disqus_RZYKPl8qIQ"
                                                 "date": "2 months ago"
@@ -1984,6 +2349,7 @@ nele não votaram!</p>
                                                 "hasReplies": True
                                                 "numberOfReplies": 2
                                                 "replies": [
+                                                    {
                                                         "id": "4866770130"
                                                         "user": "disqus_EJLoQqNK0r"
                                                         "date": "2 months ago"
@@ -1993,6 +2359,7 @@ nele não votaram!</p>
                                                         "hasReplies": True
                                                         "numberOfReplies": 1
                                                         "replies": [
+                                                            {
                                                                 "id": "4867715280"
                                                                 "user": "disqus_RZYKPl8qIQ"
                                                                 "date": "2 months ago"
@@ -2002,6 +2369,16 @@ nele não votaram!</p>
                                                                 "hasReplies": False
                                                                 "numberOfReplies": 0
                                                                 "replies": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "4866731737"
                                 "user": "disqus_cBccy1PhIj"
                                 "date": "2 months ago"
@@ -2011,6 +2388,7 @@ nele não votaram!</p>
                                 "hasReplies": True
                                 "numberOfReplies": 1
                                 "replies": [
+                                    {
                                         "id": "4866733634"
                                         "user": "disqus_EJLoQqNK0r"
                                         "date": "2 months ago"
@@ -2020,6 +2398,10 @@ nele não votaram!</p>
                                         "hasReplies": False
                                         "numberOfReplies": 0
                                         "replies": []
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "4866729613"
                                 "user": "relvas_analytics"
                                 "date": "2 months ago"
@@ -2033,6 +2415,7 @@ gripezinha!</b>
                                 "hasReplies": True
                                 "numberOfReplies": 1
                                 "replies": [
+                                    {
                                         "id": "4866748885"
                                         "user": "disqus_cBccy1PhIj"
                                         "date": "2 months ago"
@@ -2043,6 +2426,12 @@ ytics anda ai a sua companheira a dar conversa, eu ja lhe disse que não pago po
                                         "hasReplies": False
                                         "numberOfReplies": 0
                                         "replies": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "id": "4866713108"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -2061,6 +2450,8 @@ ytics anda ai a sua companheira a dar conversa, eu ja lhe disse que não pago po
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    },
+                    {
                         "id": "4866710636"
                         "user": "disqus_EJLoQqNK0r"
                         "date": "2 months ago"
@@ -2073,6 +2464,7 @@ que nunca decidiu atribuir a responsabilidade das mortes de Espanha
                         "hasReplies": True
                         "numberOfReplies": 14
                         "replies": [
+                            {
                                 "id": "4866723562"
                                 "user": "relvas_analytics"
                                 "date": "2 months ago"
@@ -2083,6 +2475,7 @@ que nunca decidiu atribuir a responsabilidade das mortes de Espanha
                                 "hasReplies": True
                                 "numberOfReplies": 8
                                 "replies": [
+                                    {
                                         "id": "4866728066"
                                         "user": "disqus_EJLoQqNK0r"
                                         "date": "2 months ago"
@@ -2094,6 +2487,7 @@ que nunca decidiu atribuir a responsabilidade das mortes de Espanha
                                         "hasReplies": True
                                         "numberOfReplies": 5
                                         "replies": [
+                                            {
                                                 "id": "4866739441"
                                                 "user": "disqus_cBccy1PhIj"
                                                 "date": "2 months ago"
@@ -2104,6 +2498,7 @@ lytics está em festa, vai receber lá na barraca os seus patrões que foram sol
                                                 "hasReplies": True
                                                 "numberOfReplies": 1
                                                 "replies": [
+                                                    {
                                                         "id": "4866761093"
                                                         "user": "disqus_EJLoQqNK0r"
                                                         "date": "2 months ago"
@@ -2113,6 +2508,10 @@ lytics está em festa, vai receber lá na barraca os seus patrões que foram sol
                                                         "hasReplies": False
                                                         "numberOfReplies": 0
                                                         "replies": []
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "id": "4866738962"
                                                 "user": "relvas_analytics"
                                                 "date": "2 months ago"
@@ -2123,6 +2522,7 @@ lytics está em festa, vai receber lá na barraca os seus patrões que foram sol
                                                 "hasReplies": True
                                                 "numberOfReplies": 1
                                                 "replies": [
+                                                    {
                                                         "id": "4866740609"
                                                         "user": "disqus_EJLoQqNK0r"
                                                         "date": "2 months ago"
@@ -2134,6 +2534,10 @@ lytics está em festa, vai receber lá na barraca os seus patrões que foram sol
                                                         "hasReplies": False
                                                         "numberOfReplies": 0
                                                         "replies": []
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "id": "4866729534"
                                                 "user": "Meliodasreidosdemonios"
                                                 "date": "2 months ago"
@@ -2143,6 +2547,10 @@ lytics está em festa, vai receber lá na barraca os seus patrões que foram sol
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "id": "4866724877"
                                         "user": "Meliodasreidosdemonios"
                                         "date": "2 months ago"
@@ -2152,6 +2560,7 @@ lytics está em festa, vai receber lá na barraca os seus patrões que foram sol
                                         "hasReplies": True
                                         "numberOfReplies": 1
                                         "replies": [
+                                            {
                                                 "id": "4866737350"
                                                 "user": "relvas_analytics"
                                                 "date": "2 months ago"
@@ -2165,6 +2574,12 @@ acham que isto é só uma gripezinha sem importância.</b>
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "4866719146"
                                 "user": "disqus_yznlqTO3Sh"
                                 "date": "2 months ago"
@@ -2177,6 +2592,7 @@ acham que isto é só uma gripezinha sem importância.</b>
                                 "hasReplies": True
                                 "numberOfReplies": 4
                                 "replies": [
+                                    {
                                         "id": "4866736367"
                                         "user": "disqus_cBccy1PhIj"
                                         "date": "2 months ago"
@@ -2189,6 +2605,7 @@ durante 6 meses.</p>"
                                         "hasReplies": True
                                         "numberOfReplies": 1
                                         "replies": [
+                                            {
                                                 "id": "4866743203"
                                                 "user": "relvas_analytics"
                                                 "date": "2 months ago"
@@ -2201,6 +2618,10 @@ idiota do Trump é um catavento o mais certo é não verem um chavo!</b>
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "id": "4866720899"
                                         "user": "Meliodasreidosdemonios"
                                         "date": "2 months ago"
@@ -2210,6 +2631,7 @@ idiota do Trump é um catavento o mais certo é não verem um chavo!</b>
                                         "hasReplies": True
                                         "numberOfReplies": 1
                                         "replies": [
+                                            {
                                                 "id": "4866723468"
                                                 "user": "disqus_yznlqTO3Sh"
                                                 "date": "2 months ago"
@@ -2219,6 +2641,16 @@ idiota do Trump é um catavento o mais certo é não verem um chavo!</b>
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866669157"
@@ -2230,6 +2662,7 @@ idiota do Trump é um catavento o mais certo é não verem um chavo!</b>
         "hasReplies": True
         "numberOfReplies": 2
         "replies": [
+            {
                 "id": "4866763157"
                 "user": "Wallace40"
                 "date": "2 months ago"
@@ -2247,6 +2680,7 @@ tem o mesmo peso de uma pessoa que percebe de politica, de governação e
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4866783459"
                         "user": "disqus_45EarayAjz"
                         "date": "2 months ago"
@@ -2256,6 +2690,10 @@ tem o mesmo peso de uma pessoa que percebe de politica, de governação e
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866667250"
@@ -2269,6 +2707,7 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
         "hasReplies": True
         "numberOfReplies": 10
         "replies": [
+            {
                 "id": "4866777759"
                 "user": "disqus_E84kZQfUeN"
                 "date": "2 months ago"
@@ -2278,6 +2717,7 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                 "hasReplies": True
                 "numberOfReplies": 1
                 "replies": [
+                    {
                         "id": "4867296592"
                         "user": "chico_fininho"
                         "date": "2 months ago"
@@ -2287,6 +2727,10 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            },
+            {
                 "id": "4866706583"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -2299,6 +2743,7 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4866782026"
                         "user": "disqus_E84kZQfUeN"
                         "date": "2 months ago"
@@ -2308,6 +2753,7 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4866812235"
                                 "user": "disqus_yznlqTO3Sh"
                                 "date": "2 months ago"
@@ -2317,6 +2763,12 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "4866669203"
                 "user": "disqus_BMoH1BB10G"
                 "date": "2 months ago"
@@ -2326,6 +2778,7 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                 "hasReplies": True
                 "numberOfReplies": 4
                 "replies": [
+                    {
                         "id": "4866779153"
                         "user": "disqus_E84kZQfUeN"
                         "date": "2 months ago"
@@ -2335,6 +2788,7 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4866912850"
                                 "user": "disqus_BMoH1BB10G"
                                 "date": "2 months ago"
@@ -2344,6 +2798,10 @@ credibilidade a esse lixo ... tambem diziam que o hadad ia ganhar</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    },
+                    {
                         "id": "4866697963"
                         "user": "chico_fininho"
                         "date": "2 months ago"
@@ -2355,6 +2813,7 @@ avante brasileiro e ainda tem a lata de vir pedir-me dinheiro</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4866780641"
                                 "user": "disqus_E84kZQfUeN"
                                 "date": "2 months ago"
@@ -2364,6 +2823,12 @@ avante brasileiro e ainda tem a lata de vir pedir-me dinheiro</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866654248"
@@ -2378,6 +2843,7 @@ uma lapa agarrado ao tacho. Acabou a democracia no Brasil.</p>"
         "hasReplies": True
         "numberOfReplies": 7
         "replies": [
+            {
                 "id": "4866699413"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -2390,6 +2856,8 @@ uma lapa agarrado ao tacho. Acabou a democracia no Brasil.</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866667436"
                 "user": "disqus_BMoH1BB10G"
                 "date": "2 months ago"
@@ -2403,6 +2871,7 @@ história. Mas foi eleito democraticamente. Quer se goste, quer não.</p>"
                 "hasReplies": True
                 "numberOfReplies": 5
                 "replies": [
+                    {
                         "id": "4866690208"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -2415,6 +2884,7 @@ história. Mas foi eleito democraticamente. Quer se goste, quer não.</p>"
                         "hasReplies": True
                         "numberOfReplies": 4
                         "replies": [
+                            {
                                 "id": "4866691051"
                                 "user": "disqus_BMoH1BB10G"
                                 "date": "2 months ago"
@@ -2424,6 +2894,7 @@ história. Mas foi eleito democraticamente. Quer se goste, quer não.</p>"
                                 "hasReplies": True
                                 "numberOfReplies": 3
                                 "replies": [
+                                    {
                                         "id": "4866693764"
                                         "user": "disqus_yznlqTO3Sh"
                                         "date": "2 months ago"
@@ -2434,6 +2905,7 @@ história. Mas foi eleito democraticamente. Quer se goste, quer não.</p>"
                                         "hasReplies": True
                                         "numberOfReplies": 2
                                         "replies": [
+                                            {
                                                 "id": "4866727889"
                                                 "user": "disqus_BMoH1BB10G"
                                                 "date": "2 months ago"
@@ -2443,6 +2915,7 @@ história. Mas foi eleito democraticamente. Quer se goste, quer não.</p>"
                                                 "hasReplies": True
                                                 "numberOfReplies": 1
                                                 "replies": [
+                                                    {
                                                         "id": "4866730150"
                                                         "user": "disqus_yznlqTO3Sh"
                                                         "date": "2 months ago"
@@ -2452,6 +2925,18 @@ história. Mas foi eleito democraticamente. Quer se goste, quer não.</p>"
                                                         "hasReplies": False
                                                         "numberOfReplies": 0
                                                         "replies": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866649191"
@@ -2479,6 +2964,7 @@ história. Mas foi eleito democraticamente. Quer se goste, quer não.</p>"
         "hasReplies": True
         "numberOfReplies": 10
         "replies": [
+            {
                 "id": "4866672572"
                 "user": "disqus_BMoH1BB10G"
                 "date": "2 months ago"
@@ -2491,6 +2977,7 @@ sérios.</p>"
                 "hasReplies": True
                 "numberOfReplies": 6
                 "replies": [
+                    {
                         "id": "4866713165"
                         "user": "disqus_hRIeZaB8kO"
                         "date": "2 months ago"
@@ -2500,6 +2987,7 @@ sérios.</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4866722681"
                                 "user": "disqus_BMoH1BB10G"
                                 "date": "2 months ago"
@@ -2509,6 +2997,10 @@ sérios.</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    },
+                    {
                         "id": "4866679807"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -2522,6 +3014,7 @@ INTELIGÊNCIA E UM CARIMBO DE IDIOTAS AO BRASIL ! ! !</b>
                         "hasReplies": True
                         "numberOfReplies": 3
                         "replies": [
+                            {
                                 "id": "4866682196"
                                 "user": "disqus_BMoH1BB10G"
                                 "date": "2 months ago"
@@ -2531,6 +3024,7 @@ INTELIGÊNCIA E UM CARIMBO DE IDIOTAS AO BRASIL ! ! !</b>
                                 "hasReplies": True
                                 "numberOfReplies": 2
                                 "replies": [
+                                    {
                                         "id": "4866685582"
                                         "user": "disqus_yznlqTO3Sh"
                                         "date": "2 months ago"
@@ -2543,6 +3037,7 @@ INTELIGÊNCIA E UM CARIMBO DE IDIOTAS AO BRASIL ! ! !</b>
                                         "hasReplies": True
                                         "numberOfReplies": 1
                                         "replies": [
+                                            {
                                                 "id": "4866693165"
                                                 "user": "disqus_BMoH1BB10G"
                                                 "date": "2 months ago"
@@ -2552,6 +3047,16 @@ INTELIGÊNCIA E UM CARIMBO DE IDIOTAS AO BRASIL ! ! !</b>
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "4866668784"
                 "user": "chico_fininho"
                 "date": "2 months ago"
@@ -2561,6 +3066,7 @@ INTELIGÊNCIA E UM CARIMBO DE IDIOTAS AO BRASIL ! ! !</b>
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4866682541"
                         "user": "disqus_yznlqTO3Sh"
                         "date": "2 months ago"
@@ -2571,6 +3077,7 @@ INTELIGÊNCIA E UM CARIMBO DE IDIOTAS AO BRASIL ! ! !</b>
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4866689861"
                                 "user": "chico_fininho"
                                 "date": "2 months ago"
@@ -2582,6 +3089,12 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866636683"
@@ -2593,6 +3106,7 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
         "hasReplies": True
         "numberOfReplies": 3
         "replies": [
+            {
                 "id": "4866673780"
                 "user": "disqus_BMoH1BB10G"
                 "date": "2 months ago"
@@ -2602,6 +3116,7 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
                 "hasReplies": True
                 "numberOfReplies": 2
                 "replies": [
+                    {
                         "id": "4866786008"
                         "user": "disqus_E84kZQfUeN"
                         "date": "2 months ago"
@@ -2613,6 +3128,7 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
                         "hasReplies": True
                         "numberOfReplies": 1
                         "replies": [
+                            {
                                 "id": "4866912200"
                                 "user": "disqus_BMoH1BB10G"
                                 "date": "2 months ago"
@@ -2622,6 +3138,12 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
                                 "hasReplies": False
                                 "numberOfReplies": 0
                                 "replies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866632237"
@@ -2633,6 +3155,7 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
         "hasReplies": True
         "numberOfReplies": 1
         "replies": [
+            {
                 "id": "4866975393"
                 "user": "papagaiofaxista"
                 "date": "2 months ago"
@@ -2642,6 +3165,8 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            }
+        ]
     },
     {
         "id": "4866631492"
@@ -2653,6 +3178,7 @@ dinheiro dos brasileiros..bilioes de dolares .... que grande governante</p>"
         "hasReplies": True
         "numberOfReplies": 6
         "replies": [
+            {
                 "id": "4866676259"
                 "user": "disqus_BMoH1BB10G"
                 "date": "2 months ago"
@@ -2665,6 +3191,8 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
                 "hasReplies": False
                 "numberOfReplies": 0
                 "replies": []
+            },
+            {
                 "id": "4866634324"
                 "user": "alfonsocontorno"
                 "date": "2 months ago"
@@ -2674,6 +3202,7 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
                 "hasReplies": True
                 "numberOfReplies": 4
                 "replies": [
+                    {
                         "id": "4866637433"
                         "user": "disqus_5s1SaSs9z5"
                         "date": "2 months ago"
@@ -2683,6 +3212,7 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
                         "hasReplies": True
                         "numberOfReplies": 3
                         "replies": [
+                            {
                                 "id": "4866713018"
                                 "user": "Meliodasreidosdemonios"
                                 "date": "2 months ago"
@@ -2692,6 +3222,7 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
                                 "hasReplies": True
                                 "numberOfReplies": 2
                                 "replies": [
+                                    {
                                         "id": "4867558574"
                                         "user": "disqus_5s1SaSs9z5"
                                         "date": "2 months ago"
@@ -2701,6 +3232,7 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
                                         "hasReplies": True
                                         "numberOfReplies": 1
                                         "replies": [
+                                            {
                                                 "id": "4867559979"
                                                 "user": "Meliodasreidosdemonios"
                                                 "date": "2 months ago"
@@ -2710,6 +3242,16 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
                                                 "hasReplies": False
                                                 "numberOfReplies": 0
                                                 "replies": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "4866628414"
@@ -2721,6 +3263,7 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
         "hasReplies": True
         "numberOfReplies": 17
         "replies": [
+            {
                 "id": "4866644348"
                 "user": "disqus_yznlqTO3Sh"
                 "date": "2 months ago"
@@ -2735,6 +3278,7 @@ de merda. O “avante” do Brasil ainda não engoliu o resultado das
                 "hasReplies": True
                 "numberOfReplies": 16
                 "replies": [
+                    {
                         "id": "4867168327"
                         "user": "alfonsocontorno"
                         "date": "2 months ago"
@@ -2747,6 +3291,7 @@ camaradas...não por que tem dinheiro...é bem diferente.</p>"
                         "hasReplies": True
                         "numberOfReplies": 14
                         "replies": [
+                            {
                                 "id": "4868119609"
                                 "user": "disqus_yznlqTO3Sh"
                                 "date": "2 months ago"
@@ -2756,6 +3301,7 @@ camaradas...não por que tem dinheiro...é bem diferente.</p>"
                                 "hasReplies": True
                                 "numberOfReplies": 13
                                 "replies": [
+                                    {
                                         "id": "4868126892"
                                         "user": "alfonsocontorno"
                                         "date": "2 months ago"
@@ -2770,6 +3316,7 @@ KERIDA , não é de borla......</p>"
                                         "hasReplies": True
                                         "numberOfReplies": 12
                                         "replies": [
+                                            {
                                                 "id": "4868131013"
                                                 "user": "disqus_yznlqTO3Sh"
                                                 "date": "2 months ago"
@@ -2780,6 +3327,7 @@ KERIDA , não é de borla......</p>"
                                                 "hasReplies": True
                                                 "numberOfReplies": 11
                                                 "replies": [
+                                                    {
                                                         "id": "4868132783"
                                                         "user": "alfonsocontorno"
                                                         "date": "2 months ago"
@@ -2789,6 +3337,7 @@ KERIDA , não é de borla......</p>"
                                                         "hasReplies": True
                                                         "numberOfReplies": 7
                                                         "replies": [
+                                                            {
                                                                 "id": "4868138934"
                                                                 "user": "disqus_yznlqTO3Sh"
                                                                 "date": "2 months ago"
@@ -2799,6 +3348,7 @@ KERIDA , não é de borla......</p>"
                                                                 "hasReplies": True
                                                                 "numberOfReplies": 6
                                                                 "replies": [
+                                                                    {
                                                                         "id": "4868152455"
                                                                         "user": "alfonsocontorno"
                                                                         "date": "2 months ago"
@@ -2815,6 +3365,7 @@ mais...a não ser que paguesa saúde</p>"
                                                                         "hasReplies": True
                                                                         "numberOfReplies": 5
                                                                         "replies": [
+                                                                            {
                                                                                 "id": "4868157206"
                                                                                 "user": "disqus_yznlqTO3Sh"
                                                                                 "date": "2 months ago"
@@ -2824,6 +3375,7 @@ mais...a não ser que paguesa saúde</p>"
                                                                                 "hasReplies": True
                                                                                 "numberOfReplies": 4
                                                                                 "replies": [
+                                                                                    {
                                                                                         "id": "4868175384"
                                                                                         "user": "alfonsocontorno"
                                                                                         "date": "2 months ago"
@@ -2837,6 +3389,7 @@ de aprender o Português???</p>"
                                                                                         "hasReplies": True
                                                                                         "numberOfReplies": 2
                                                                                         "replies": [
+                                                                                            {
                                                                                                 "id": "4868184284"
                                                                                                 "user": "disqus_yznlqTO3Sh"
                                                                                                 "date": "2 months ago"
@@ -2849,6 +3402,7 @@ SE FAZ FAVOR !</p>"
                                                                                                 "hasReplies": True
                                                                                                 "numberOfReplies": 1
                                                                                                 "replies": [
+                                                                                                    {
                                                                                                         "id": "4868198895"
                                                                                                         "user": "alfonsocontorno"
                                                                                                         "date": "2 months ago"
@@ -2858,6 +3412,12 @@ SE FAZ FAVOR !</p>"
                                                                                                         "hasReplies": False
                                                                                                         "numberOfReplies": 0
                                                                                                         "replies": []
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
                                                                                         "id": "4868158518"
                                                                                         "user": "alfonsocontorno"
                                                                                         "date": "2 months ago"
@@ -2867,6 +3427,16 @@ SE FAZ FAVOR !</p>"
                                                                                         "hasReplies": False
                                                                                         "numberOfReplies": 0
                                                                                         "replies": []
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "id": "4868131803"
                                                         "user": "alfonsocontorno"
                                                         "date": "2 months ago"
@@ -2876,6 +3446,7 @@ SE FAZ FAVOR !</p>"
                                                         "hasReplies": True
                                                         "numberOfReplies": 2
                                                         "replies": [
+                                                            {
                                                                 "id": "4868141615"
                                                                 "user": "disqus_yznlqTO3Sh"
                                                                 "date": "2 months ago"
@@ -2888,6 +3459,7 @@ SE FAZ FAVOR !</p>"
                                                                 "hasReplies": True
                                                                 "numberOfReplies": 1
                                                                 "replies": [
+                                                                    {
                                                                         "id": "4868159640"
                                                                         "user": "alfonsocontorno"
                                                                         "date": "2 months ago"
@@ -2897,6 +3469,20 @@ SE FAZ FAVOR !</p>"
                                                                         "hasReplies": False
                                                                         "numberOfReplies": 0
                                                                         "replies": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "id": "4866678618"
                         "user": "disqus_BMoH1BB10G"
                         "date": "2 months ago"
@@ -2906,5 +3492,9 @@ SE FAZ FAVOR !</p>"
                         "hasReplies": False
                         "numberOfReplies": 0
                         "replies": []
+                    }
+                ]
+            }
+        ]
     }
 ]
