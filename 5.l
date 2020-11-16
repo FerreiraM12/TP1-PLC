@@ -35,6 +35,7 @@ int setNumberOfReplies(CTree);
 void printComs(CTree, int);
 void fillcTreePos(int*);
 void indentation(int);
+char* replaceWord(const char*, const char*, const char*);
 
 void mTreeInserter(CTree* cTreeLoc, int pos[], CTree cTreeTMP) {
     if(!*cTreeLoc) *cTreeLoc = cloneComment(cTreeTMP); // !*cTreeLoc é o mesmo que *cTreeLoc == NULL
@@ -82,15 +83,27 @@ int setNumberOfReplies(CTree cTree) {
 }
 
 void printComs(CTree cTree, int depth) {
-    indentation(depth+1); printf("\"id\": \"%s\"\n", cTree->id);
-    indentation(depth+1); printf("\"user\": \"%s\"\n", cTree->user);
-    indentation(depth+1); printf("\"date\": \"%s\"\n", cTree->date);
-    indentation(depth+1); printf("\"timestamp\": \"%s\"\n", "NA");
-    indentation(depth+1); printf("\"commentText\": \"%s\"\n", cTree->commentText);
-    indentation(depth+1); printf("\"likes\": %s\n", cTree->likes);
+    cTree->commentText = replaceWord(cTree->commentText, "\n", "");
+    cTree->commentText = replaceWord(cTree->commentText, "\"", "\\\"");
+    cTree->commentText = replaceWord(cTree->commentText, "<b>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "</b>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "<p>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "</p>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "<u>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "</u>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "<i>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "</i>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "<br>", "");
+
+    indentation(depth+1); printf("\"id\": \"%s\",\n", cTree->id);
+    indentation(depth+1); printf("\"user\": \"%s\",\n", cTree->user);
+    indentation(depth+1); printf("\"date\": \"%s\",\n", cTree->date);
+    indentation(depth+1); printf("\"timestamp\": \"%s\",\n", "NA");
+    indentation(depth+1); printf("\"commentText\": \"%s\",\n", cTree->commentText);
+    indentation(depth+1); printf("\"likes\": %s,\n", cTree->likes);
     indentation(depth+1); printf("\"hasReplies\": ");
-    if (!cTree->numberOfReplies) printf("FALSE\n"); else printf("TRUE\n");
-    indentation(depth+1); printf("\"numberOfReplies\": %i\n", cTree->numberOfReplies);
+    if (!cTree->numberOfReplies) printf("false,\n"); else printf("true,\n");
+    indentation(depth+1); printf("\"numberOfReplies\": %i,\n", cTree->numberOfReplies);
     if (!cTree->numberOfReplies) {
         indentation(depth+1); printf("\"replies\": []\n");
     } else {
@@ -112,6 +125,43 @@ void printComs(CTree cTree, int depth) {
 void fillcTreePos(int cTreePos[]) {for (int i=0;i<100;i++) cTreePos[i] = -1;}
 
 void indentation(int n) {for (int i=0;i<n;i++) printf("    ");}
+
+char* replaceWord(const char* s, const char* oldW, const char* newW) 
+{ 
+    char* result; 
+    int i, cnt = 0; 
+    int newWlen = strlen(newW); 
+    int oldWlen = strlen(oldW); 
+  
+    // Counting the number of times old word 
+    // occur in the string 
+    for (i = 0; s[i] != '\0'; i++) { 
+        if (strstr(&s[i], oldW) == &s[i]) { 
+            cnt++; 
+  
+            // Jumping to index after the old word. 
+            i += oldWlen - 1; 
+        } 
+    } 
+  
+    // Making new string of enough length 
+    result = (char*)malloc(i + cnt * (newWlen - oldWlen) + 1); 
+  
+    i = 0; 
+    while (*s) { 
+        // compare the substring with the result 
+        if (strstr(s, oldW) == s) { 
+            strcpy(&result[i], newW); 
+            i += newWlen; 
+            s += oldWlen; 
+        } 
+        else
+            result[i++] = *s++; 
+    } 
+  
+    result[i] = '\0'; 
+    return result; 
+} 
 
 %}
 
@@ -188,10 +238,10 @@ START_LIKES                 data-role=\"likes\"\>
     cTreePos[depth--] = -1;
     if (!depth) {
         if (flag) printf(",\n"); else flag = 1;
-        indentation(1); printf("{\n");
+        indentation(2); printf("{\n");
         setNumberOfReplies(cTree);
-        printComs(cTree, 1);
-        indentation(1); printf("}");
+        printComs(cTree, 2);
+        indentation(2); printf("}");
         cTree = NULL; // TODO: fazer free
     }
     yy_pop_state();
@@ -202,13 +252,13 @@ START_LIKES                 data-role=\"likes\"\>
 %%
 
 int yywrap() {
-    printf("\n]\n");
+    printf("\n    ]\n}\n");
     return(1);
 }
 
 int main(){
     cTree = NULL;
     fillcTreePos(cTreePos);
-    printf("\"commentThread\": [\n");
+    printf("{\n    \"commentThread\": [\n");
     yylex(); return 0;
 }
