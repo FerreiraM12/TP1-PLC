@@ -10,7 +10,7 @@ typedef struct Comment {
     const char* commentText;
     const char* likes;
     int numberOfReplies;
-    struct Comment* cTreeArr[25];
+    struct Comment* cTreeArr[100];
 } *CTree, Comment;
 
 CTree cTree;
@@ -18,7 +18,8 @@ CTree cTreeTMP;
 
 int depth = 0;
 int flag = 0;
-int cTreePos[25];
+int flag2 = 0;
+int cTreePos[100];
 
 void mTreeInserter(CTree*, int*, CTree);
 void mTreeInserterAUX(CTree*, int*, int, CTree);
@@ -42,7 +43,7 @@ void mTreeInserter(CTree* cTreeLoc, int pos[], CTree cTreeTMP) {
 
 void mTreeInserterAUX(CTree* cTreeLoc, int pos[], int i, CTree cTreeTMP) {
     if (pos[i] == -1) return;
-    if (!(*cTreeLoc)->cTreeArr[pos[i]]) { // !(*cTreeLoc)->cTreeArr[pos[i]] é o mesmo que (*cTreeLoc)->cTreeArr[pos[i]] == NULL
+    if (!(*cTreeLoc)->cTreeArr[pos[i]]) {
         (*cTreeLoc)->cTreeArr[pos[i]] = cloneComment(cTreeTMP);
     } else mTreeInserterAUX(&(*cTreeLoc)->cTreeArr[pos[i]], pos, i+1, cTreeTMP);
 }
@@ -55,7 +56,7 @@ CTree cloneComment(CTree cTreeTMP) {
     cTree->commentText = strdup(cTreeTMP->commentText);
     cTree->likes = strdup(cTreeTMP->likes);
     cTree->numberOfReplies = cTreeTMP->numberOfReplies;
-    for(int i=0;i<25;i++) cTreeTMP->cTreeArr[i] = NULL;
+    for(int i=0;i<100;i++) cTreeTMP->cTreeArr[i] = NULL;
     return cTree;
 }
 
@@ -72,7 +73,7 @@ void setLikes(CTree cTree, char* likes) {cTree->likes = strdup(likes);}
 
 int setNumberOfReplies(CTree cTree) {
     int numberOfReplies = 0;
-    for (int i=0;i<25;i++) {
+    for (int i=0;i<100;i++) {
         if (cTree->cTreeArr[i]) numberOfReplies += setNumberOfReplies(cTree->cTreeArr[i]);
         else break;
     }
@@ -90,12 +91,12 @@ void printComs(CTree cTree, int depth) {
     indentation(depth+1); printf("\"hasReplies\": ");
     if (!cTree->numberOfReplies) printf("False\n"); else printf("True\n");
     indentation(depth+1); printf("\"numberOfReplies\": %i\n", cTree->numberOfReplies);
-    if (!cTree->numberOfReplies) { // !cTree->numberOfReplies é o mesmo que cTree->numberOfReplies == 0
+    if (!cTree->numberOfReplies) {
         indentation(depth+1); printf("\"replies\": []\n");
     } else {
         indentation(depth+1); printf("\"replies\": [\n");
-        for (int i=0;i<25;i++) {
-            if (cTree->cTreeArr[i]) { // cTree->cTreeArr[i] é o mesmo que cTree->cTreeArr[i] != NULL
+        for (int i=0;i<100;i++) {
+            if (cTree->cTreeArr[i]) {
                 indentation(depth+2); printf("{\n");
                 printComs(cTree->cTreeArr[i], depth+2);
                 indentation(depth+2); printf("}");
@@ -108,7 +109,7 @@ void printComs(CTree cTree, int depth) {
     }
 }
 
-void fillcTreePos(int cTreePos[]) {for (int i=0;i<25;i++) cTreePos[i] = -1;}
+void fillcTreePos(int cTreePos[]) {for (int i=0;i<100;i++) cTreePos[i] = -1;}
 
 void indentation(int n) {for (int i=0;i<n;i++) printf("    ");}
 
@@ -123,8 +124,8 @@ END_USERNAME                \"[' ']href
 
 START_DATE                  \<a[' ']class=\"time-ago.+\"\>
 
-START_COMMENT_TEXT          \<div[' ']class=\"post-message\"[' ']data-role=\"message\"[' ']dir=\"auto\"\>\<div\>
-END_COMMENT_TEXT            \n\<\/div\>\n<\/div\>
+START_COMMENT_TEXT          \<div[' ']class=\"post-message\"[' ']data-role=\"message\"[' ']dir=\"auto\"\>\<div\>\<p\>
+END_COMMENT_TEXT            \<\/p\>\n\<\/div\>\n<\/div\>
 
 START_LIKES                 data-role=\"likes\"\>
 
@@ -144,6 +145,7 @@ START_LIKES                 data-role=\"likes\"\>
 }
 
 <COMMENT>{START_USERNAME} {
+    flag2 = 1;
     yy_push_state(USERNAME);
 }
 
@@ -176,6 +178,7 @@ START_LIKES                 data-role=\"likes\"\>
 
 <LIKE>[0-9]+ {
     setLikes(cTreeTMP, yytext);
+    if (flag2 == 0) setUser(cTreeTMP, "Guest"); else flag2 = 0;
     mTreeInserter(&cTree, cTreePos, cTreeTMP);
     cTreeTMP = NULL;
     yy_pop_state();
@@ -183,9 +186,8 @@ START_LIKES                 data-role=\"likes\"\>
 
 <COMMENT>{END_COMMENT} {
     cTreePos[depth--] = -1;
-    if (!depth) { //!depth é o mesmo que depth == 0
-        if (flag) printf(",\n"); //flag != 0 é o mesmo que !flag
-        flag = 1;
+    if (!depth) {
+        if (flag) printf(",\n"); else flag = 1;
         indentation(1); printf("{\n");
         setNumberOfReplies(cTree);
         printComs(cTree, 1);
