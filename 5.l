@@ -89,7 +89,7 @@ void printComs(CTree cTree, int depth) {
     indentation(depth+1); printf("\"commentText\": \"%s\"\n", cTree->commentText);
     indentation(depth+1); printf("\"likes\": %s\n", cTree->likes);
     indentation(depth+1); printf("\"hasReplies\": ");
-    if (!cTree->numberOfReplies) printf("False\n"); else printf("True\n");
+    if (!cTree->numberOfReplies) printf("FALSE\n"); else printf("TRUE\n");
     indentation(depth+1); printf("\"numberOfReplies\": %i\n", cTree->numberOfReplies);
     if (!cTree->numberOfReplies) {
         indentation(depth+1); printf("\"replies\": []\n");
