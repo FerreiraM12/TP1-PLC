@@ -37,7 +37,7 @@ void indentation(int);
 char* replaceWord(const char*, const char*, const char*);
 
 void cTreeInserter(CTree* cTreeLoc, int pos[], CTree cTreeTMP) {
-    if(!*cTreeLoc) *cTreeLoc = cloneComment(cTreeTMP); // !*cTreeLoc é o mesmo que *cTreeLoc == NULL
+    if(!*cTreeLoc) *cTreeLoc = cloneComment(cTreeTMP);
     else cTreeInserterAUX(cTreeLoc, pos, 1, cTreeTMP);
 }
 
