@@ -88,7 +88,7 @@ void printComs(CTree cTree, int depth) {
     cTree->commentText = replaceWord(cTree->commentText, "<b>", "");
     cTree->commentText = replaceWord(cTree->commentText, "</b>", "");
     cTree->commentText = replaceWord(cTree->commentText, "<p>", "");
-    cTree->commentText = replaceWord(cTree->commentText, "</p>", "");
+    cTree->commentText = replaceWord(cTree->commentText, "</p>", "\\n");
     cTree->commentText = replaceWord(cTree->commentText, "<u>", "");
     cTree->commentText = replaceWord(cTree->commentText, "</u>", "");
     cTree->commentText = replaceWord(cTree->commentText, "<i>", "");
