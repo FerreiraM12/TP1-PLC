@@ -4,7 +4,6 @@ Transformador Sol2NetLang em Flex
 Para instalar o flex:
 
 $ sudo apt-get update
-
 $ sudo apt-get install flex
 
 Para correr o programa:
