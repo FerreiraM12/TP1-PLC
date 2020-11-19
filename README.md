@@ -1,10 +1,12 @@
 # TP1-PLC-Transformador-Sol2NetLang
 
 ### Para instalar o flex:
+```
 
 $ sudo apt-get update
 
 $ sudo apt-get install flex
+```
 
 
 ### Para correr o programa:
