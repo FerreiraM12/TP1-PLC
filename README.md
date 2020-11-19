@@ -2,7 +2,6 @@
 
 ### Para instalar o flex:
 ```
-
 $ sudo apt-get update
 
 $ sudo apt-get install flex
